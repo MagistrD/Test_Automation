@@ -1,0 +1,69 @@
+Create XPath or CSS locators to web elements:
+
+Google search page :
+     
+- query input
+XPath: //input[@id='lst-ib']
+SCC locator: #gs_htif0
+
+- ‘search in Google’ button
+XPath: //input[@name='btnK']
+SCC locator: .jsb>center>input:first-child
+
+- “I am lucky!’ button
+XPath: //input[@name='btnI']
+SCC locator: .jsb>center>input:last-child
+
+- Search for “nyan cat” and create a locator that returns ALL 10 result links (see screenshot)
+XPath: //*[@class='r' or @class='_Icb _kk _wI']
+SCC locator: .r>a, ._Icb._kk._wI>a
+
+- n-th ‘o’ letter in Goooooooooogle   (n = 1...10)
+XPath: //td[11]/a/span
+SCC locator: 
+
+
+Mail.ru login page:    
+
+- login input
+XPath: //input[@id='mailbox__login']
+SCC locator: 
+
+- password input
+XPath: //input[@id='mailbox__password']
+SCC locator: 
+
+- ‘Enter’ button
+XPath: //input[@id='mailbox__auth__button']
+SCC locator: 
+
+
+Mail.ru main page (logged in):
+
+- links to folders (incoming, outcoming, spam, deleted, drafts)
+incoming: XPath: //div[@class='b-nav__item js-href b-nav__item_active']
+
+
+outcoming: XPath: //div[@class='b-nav__item js-href'][1]
+
+
+spam: XPath: //div[@class='b-nav__item js-href'][3]
+
+
+deleted: XPath: //div[@class='b-nav__item js-href'][4]
+
+
+drafts: XPath: //div[@class='b-nav__item js-href'][2]
+
+- action buttons (write new letter, delete, mark as spam, mark as not spam, mark as read, move to another folder)
+
+
+- Checkbox for one exact letter
+
+
+- Opening link for one exact letter
+
+
+- New letter page: inputs for address, topic, text, file attach
+
+
