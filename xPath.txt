@@ -11,10 +11,10 @@ Google search page :
 		XPath: //input[@name='btnI']
 		SCC locator: .jsb>center>input:last-child
 	Search for "nyan cat" and create a locator that returns ALL 10 result links (see screenshot)
-		XPath: //*[@class='r' or @class='_Icb _kk _wI']
+		XPath: $x("//*/a[(contains(text(),'NYAN') and contains(text(),'CAT')) or (contains(text(),'Nyan') and contains(text(),'Cat'))]")
 		SCC locator: .r>a, ._Icb._kk._wI>a
 	n-th "o" letter in Goooooooooogle   (n = 1...10)
-		XPath: .//a[text()='10']
+		XPath: .//a[text()='10']/span
 		SCC locator: [aria-label='Page 10']>span
 
 Mail.ru login page:    
@@ -86,5 +86,4 @@ Mail.ru main page (logged in):
 			SCC locator: [class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
 
 	Google.com 
-		//поиск всех родителей строки запроса
-		XPath: //input[@id='lst-ib']/ancestor::*
+		XPath: //a[@href='http://www.nyan.cat/']/ancestor::div[@class='rc']//span[@class='st']
