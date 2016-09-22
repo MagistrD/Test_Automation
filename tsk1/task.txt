@@ -1,0 +1,54 @@
+Hometask 1 (DeadLine 21.09)
+L3 - Preparations
+
+Create Git repo using any suitable for you hosting (BitBucket, GitHub, etc). Make this repo public, by this way you will share you homework with your mentor.
+Name you repo like “hometasks-gomel-tat2016q3”
+You should use .gitignore file. In future it will help you to exclude any temporary files from git indexing (logs, generated xmls and so on). Please read how to work with .gitignore.
+Organize your work using directories should look like this:
+
+.git
+.gitignore
+hometask1
+hometask2
+
+
+L4 - DevTools, Locators
+Part 1
+
+Create XPath and CSS locators to web elements:
+Google search page :
+     
+query input
+‘search in Google’ button
+“I am lucky!’ button
+Search for “nyan cat” and create a locator that returns ALL 10 result links (see screenshot)
+n-th ‘o’ letter in Goooooooooogle   (n = 1...10)
+
+Mail.ru login page:    
+
+login input
+password input
+‘Enter’ button
+
+Mail.ru main page (logged in):
+
+links to folders (incoming, outcoming, spam, deleted, drafts)
+action buttons (write new letter, delete, mark as spam, mark as not spam, mark as read, move to another folder)
+Checkbox for one exact letter
+Opening link for one exact letter
+New letter page: inputs for address, topic, text, file attach
+
+Save locators to txt file and push it to your repository
+(All locators will be useful for you in next tasks)
+
+Part 2
+
+Install Firefox, Selenium IDE, create a script that will:
+
+Open Google search
+Search for ‘Banana song’
+Find a youtube link (‘href’ contains ‘youtube.com’) with ‘Despicable Me’ in the text, follow this link
+Assert that we are on youtube site (page title)
+Assert that video was watched more than 40 million times
+
+Save the script as “banana.html” and push it to your repository
