@@ -78,9 +78,9 @@ Mail.ru main page (logged in):
 		topic
 			XPath: //input[@class='compose__header__field']
 			SCC locator: input[class='compose__header__field']
-		text //Не получилось обратиться к body, так как он лежит в фрейме
-			XPath: //iframe[@id='compose_409_composeEditor_ifr']
-			SCC locator: iframe[id='compose_409_composeEditor_ifr']
+		text 
+			XPath: //body[@id='tinymce']
+			SCC locator: body[id='tinymce']
 		file attach
 			XPath: .//div[@class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
 			SCC locator: [class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
