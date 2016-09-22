@@ -1,0 +1,89 @@
+Create XPath or CSS locators to web elements:
+
+Google search page :
+    query input
+		XPath: //input[@id='lst-ib']
+		SCC locator: #gs_htif0
+	"search in Google" button
+		XPath: //input[@name='btnK']
+		SCC locator: .jsb>center>input:first-child
+	"I am lucky!" button
+		XPath: //input[@name='btnI']
+		SCC locator: .jsb>center>input:last-child
+	Search for "nyan cat" and create a locator that returns ALL 10 result links (see screenshot)
+		XPath: $x("//*/a[(contains(text(),'NYAN') and contains(text(),'CAT')) or (contains(text(),'Nyan') and contains(text(),'Cat'))]")
+		SCC locator: .r>a, ._Icb._kk._wI>a
+	n-th "o" letter in Goooooooooogle   (n = 1...10)
+		XPath: .//a[text()='10']/span
+		SCC locator: [aria-label='Page 10']>span
+
+Mail.ru login page:    
+	login input
+		XPath: //input[@id='mailbox__login']
+		SCC locator: #mailbox__login
+	password input
+		XPath: //input[@id='mailbox__password']
+		SCC locator: #mailbox__password
+	"Enter" button
+		XPath: //input[@id='mailbox__auth__button']
+		SCC locator: #mailbox__auth__button
+
+
+Mail.ru main page (logged in):
+	links to folders (incoming, outcoming, spam, deleted, drafts)
+		incoming: 
+			XPath: //*[@data-id='0']
+			SCC locator: [data-id='0']
+		outcoming: 
+			XPath: //*[@data-id='500000']
+			SCC locator: [data-id='500000']
+		spam: 
+			XPath: //*[@data-id='950']
+			SCC locator: [data-id='950']
+		deleted: 
+			XPath: //*[@data-id='500002']
+			SCC locator: [data-id='500002']
+		drafts: 
+			XPath: //*[@data-id='500001']
+			SCC locator: [data-id='500001']
+	action buttons (write new letter, delete, mark as spam, mark as not spam, mark as read, move to another folder)
+		write new letter
+			XPath: //*[@data-shortcut='n']
+			SCC locator: [data-shortcut='n']
+		delete
+			XPath: //*[@data-name='remove']
+			SCC locator: [data-name='remove']
+		mark as spam
+			XPath: //*[@data-shortcut='j']
+			SCC locator: [data-shortcut='j']
+		mark as not spam
+			XPath: //*[@data-name='noSpam']
+			SCC locator: [data-name='noSpam']
+		mark as read
+			XPath: //*[@data-name='read']
+			SCC locator: [data-name='read']
+		move to another folder
+			XPath: //*[@data-shortcut-title='V']
+			SCC locator: div[data-shortcut-title='V']
+	Checkbox for one exact letter
+		XPath: //div[@class='js-checkbox b-checkbox']
+		SCC locator: div[class='js-checkbox b-checkbox']
+	Opening link for one exact letter
+		XPath: //div[@class='b-datalist__item__panel']
+		SCC locator: .b-datalist__item__panel
+	New letter page: inputs for address, topic, text, file attach
+		inputs for address
+			XPath: //textarea[@data-original-name='To']
+			SCC locator: textarea[data-original-name='To']
+		topic
+			XPath: //input[@class='compose__header__field']
+			SCC locator: input[class='compose__header__field']
+		text 
+			XPath: //body[@id='tinymce']
+			SCC locator: body[id='tinymce']
+		file attach
+			XPath: .//div[@class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
+			SCC locator: [class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
+
+	Google.com 
+XPath: //a[@href='http://www.nyan.cat/']/ancestor::div[@class='rc']//span[@class='st']
