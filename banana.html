@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.by/" />
+<title>script</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">script</td></tr>
+</thead><tbody>
+<tr>
+	<td>type</td>
+	<td>id=lst-ib</td>
+	<td>banana song</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@name='btnG']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@class='r']/a[contains(@href,'youtube.com') and contains(text(),'Despicable Me')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>7000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>*YouTube*</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@class='watch-view-count']/text()</td>
+	<td>ViewCount</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'${ViewCount}'.replace(/ /g, &quot;&quot;).replace(/[^-0-9]/gim,'')</td>
+	<td>ViewCountDeg</td>
+</tr>
+<tr>
+	<td>assertEval</td>
+	<td>${ViewCountDeg}&gt;40000000</td>
+	<td>true</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
