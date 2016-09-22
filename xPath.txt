@@ -1,4 +1,4 @@
-Create XPath or CSS locators to web elements:
+﻿Create XPath or CSS locators to web elements:
 
 Google search page :
     query input
@@ -14,7 +14,7 @@ Google search page :
 		XPath: //*[@class='r' or @class='_Icb _kk _wI']
 		SCC locator: .r>a, ._Icb._kk._wI>a
 	n-th "o" letter in Goooooooooogle   (n = 1...10)
-		XPath: //td[10+1]/a/span
+		XPath: .//a[text()='10']
 		SCC locator: [aria-label='Page 10']>span
 
 Mail.ru login page:    
@@ -85,3 +85,6 @@ Mail.ru main page (logged in):
 			XPath: .//div[@class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
 			SCC locator: [class='js-input-file b-toolbar__btn b-toolbar__btn_grouped b-toolbar__btn_grouped_first']
 
+	Google.com 
+		//поиск всех родителей строки запроса
+		XPath: //input[@id='lst-ib']/ancestor::*
