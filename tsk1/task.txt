@@ -2,7 +2,7 @@ Hometask 1 (DeadLine 21.09)
 L3 - Preparations
 
 Create Git repo using any suitable for you hosting (BitBucket, GitHub, etc). Make this repo public, by this way you will share you homework with your mentor.
-Name you repo like “hometasks-gomel-tat2016q3”
+Name you repo like â€œhometasks-gomel-tat2016q3â€
 You should use .gitignore file. In future it will help you to exclude any temporary files from git indexing (logs, generated xmls and so on). Please read how to work with .gitignore.
 Organize your work using directories should look like this:
 
@@ -19,16 +19,16 @@ Create XPath and CSS locators to web elements:
 Google search page :
      
 query input
-‘search in Google’ button
-“I am lucky!’ button
-Search for “nyan cat” and create a locator that returns ALL 10 result links (see screenshot)
-n-th ‘o’ letter in Goooooooooogle   (n = 1...10)
+â€˜search in Googleâ€™ button
+â€œI am lucky!â€™ button
+Search for â€œnyan catâ€ and create a locator that returns ALL 10 result links (see screenshot)
+n-th â€˜oâ€™ letter in Goooooooooogle   (n = 1...10)
 
 Mail.ru login page:    
 
 login input
 password input
-‘Enter’ button
+â€˜Enterâ€™ button
 
 Mail.ru main page (logged in):
 
@@ -46,12 +46,9 @@ Part 2
 Install Firefox, Selenium IDE, create a script that will:
 
 Open Google search
-Search for ‘Banana song’
-Find a youtube link (‘href’ contains ‘youtube.com’) with ‘Despicable Me’ in the text, follow this link
+Search for â€˜Banana songâ€™
+Find a youtube link (â€˜hrefâ€™ contains â€˜youtube.comâ€™) with â€˜Despicable Meâ€™ in the text, follow this link
 Assert that we are on youtube site (page title)
 Assert that video was watched more than 40 million times
 
-Save the script as “banana.html” and push it to your repository
-
-
-
+Save the script as â€œbanana.htmlâ€ and push it to your repository
