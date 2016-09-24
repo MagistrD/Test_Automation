@@ -2,41 +2,15 @@ import com.epam.gomel.homework.Boy;
 import com.epam.gomel.homework.Girl;
 import com.epam.gomel.homework.Month;
 import com.epam.gomel.homework.Mood;
-import org.omg.SendingContext.RunTime;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.reporters.jq.Main;
 
 public class BoyTest {
-    Girl girl;
-    Boy boy;
+    private Girl girl;
+    private Boy boy;
 
-//    @BeforeClass
-//    public void SetUp() {
-//        girl = new Girl(true,true, boy);
-//    }
-
-    //    @DataProvider(name = "Data for boy constructor")
-//    public Object[][] dataForBoyConstructor() {
-//        return new Object[][]{
-//                {Month.JUNE, 0, null, true},
-//                {Month.AUGUST, 1_000_000, null, true},
-//                {Month.JULY, 1_000_000, girl, true}
-//        };
-//    }
-//
-//    @Test
-//    public void constructorTest() {
-//        boy = new Boy(Month.JUNE, 0, null);
-//        boolean result = true;
-//        if (boy.getBirthdayMonth() != Month.JUNE || boy.getWealth() != 0 || boy.getGirlFriend() != null) {
-//            result = false;
-//        }
-//        Assert.assertTrue(result, "Boy-constructor incorrect");
-//    }
-    @Test
+    @Test(groups = "constructors", alwaysRun = true)
     public void firstConstructor() {
         girl = new Girl(true, true, boy);
         boy = new Boy(Month.JUNE, 1_100_000, girl);
@@ -47,7 +21,7 @@ public class BoyTest {
         Assert.assertTrue(b, "Constructor incorrect");
     }
 
-    @Test
+    @Test(groups = "constructors", alwaysRun = true)
     public void secondConstructor() {
         Boy boy = new Boy(Month.JUNE, 1_100_000);
         boolean b = true;
@@ -57,7 +31,7 @@ public class BoyTest {
         Assert.assertTrue(b, "Constructor incorrect");
     }
 
-    @Test
+    @Test(groups = "constructors", alwaysRun = true)
     public void thirdConstructor() {
         boy = new Boy(Month.JUNE);
         boolean b = true;
@@ -75,21 +49,21 @@ public class BoyTest {
         };
     }
 
-    @Test
+    @Test(groups = "mood")
     public void ExcellentMoodTest() {
         girl = new Girl(true);
         boy = new Boy(Month.AUGUST, 1_500_500, girl);
         Assert.assertEquals(Mood.EXCELLENT, boy.getMood(), "Excepted Excellent mood");
     }
 
-    @Test
+    @Test(groups = "mood")
     public void GoodMoodTest() {
         girl = new Girl(true);
         boy = new Boy(Month.JANUARY, 1_500_500, girl);
         Assert.assertEquals(Mood.GOOD, boy.getMood(), "Excepted Good mood");
     }
 
-    @Test
+    @Test(groups = "mood")
     public void NeutralMoodTest() {
         boy = new Boy(Month.JUNE, 1_500_500);
         Assert.assertEquals(Mood.NEUTRAL, boy.getMood(), "Excepted Neutral mood");
@@ -104,14 +78,14 @@ public class BoyTest {
         };
     }
 
-    @Test(dataProvider = "Data for bad mood")
+    @Test(dataProvider = "Data for bad mood", groups = "mood")
     public void BadMoodTest(Month month, double wealth, boolean pretty) {
         girl = new Girl(pretty);
         boy = new Boy(month, wealth, girl);
         Assert.assertEquals(Mood.BAD, boy.getMood(), "Excepted Bad mood");
     }
 
-    @Test
+    @Test(groups = "mood")
     public void HorribleMoodTest() {
         boy = new Boy(Month.JANUARY, 500_500);
         Assert.assertEquals(Mood.HORRIBLE, boy.getMood(), "Excepted Horrible mood");
@@ -212,7 +186,7 @@ public class BoyTest {
     }
 
     @DataProvider(name = "Data for is not pretty girlfriend")
-    public Object[][] dataForIsNotPrettyGirlFriendTest() {
+    public Object[][] dataForIsNotPrettyGirlFriend() {
         return new Object[][]{
                 {null, false},
                 {girl, false}

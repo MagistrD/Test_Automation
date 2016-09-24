@@ -46,7 +46,7 @@ public class Boy extends Human {
     }
 
     public void spendSomeMoney(double amountForSpending) {
-        if (amountForSpending <= getWealth()) {
+        if (amountForSpending <= getWealth() && amountForSpending >= 0) {
             wealth -= amountForSpending;//was bug
         } else {
             throw new RuntimeException(String.format("Not enough money! Requested amount is %s$ but you can't spend more then %s$", amountForSpending, getWealth()));
