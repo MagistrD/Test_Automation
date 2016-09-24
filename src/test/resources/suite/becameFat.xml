@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BecameFat suite">
+    <test name="BecameFat method test">
+        <parameter name="pretty" value="false"/>
+        <parameter name="becameFat" value="true"/>
+        <classes>
+            <class name="GirlTest"/>
+        </classes>
+    </test>
+</suite>
