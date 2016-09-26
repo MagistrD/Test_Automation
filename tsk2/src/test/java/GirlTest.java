@@ -7,7 +7,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-
 public class GirlTest {
     private Girl girl;
     private Boy boy;
@@ -58,7 +57,7 @@ public class GirlTest {
     private double wealthFab;
     private boolean prettyFab;
 
-    public GirlTest(Month monthFab, double wealthFab, boolean prettyFab) {
+    GirlTest(Month monthFab, double wealthFab, boolean prettyFab) {
         this.monthFab = monthFab;
         this.wealthFab = wealthFab;
         this.prettyFab = prettyFab;
@@ -88,8 +87,8 @@ public class GirlTest {
     @DataProvider(name = "Data for boy will not buy new shoes")
     public Object[][] dataForBoyFriendWillNotBuyNewShoes() {
         return new Object[][]{
-                {500_000, true},
-                {1_000_100, false}
+                {500_000.0, true},
+                {1_000_100.0, false}
         };
     }
 
@@ -111,8 +110,8 @@ public class GirlTest {
     @DataProvider(name = "Data for boy is not rich")
     public Object[][] dataForIsBoyfriendNotRich() {
         return new Object[][]{
-                {500_000, true},
-                {0, false}
+                {(double) 500_000, true},
+                {(double) 0, false}
         };
     }
 
