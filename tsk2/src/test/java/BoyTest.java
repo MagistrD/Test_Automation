@@ -47,9 +47,9 @@ public class BoyTest extends BaseTest {
     @DataProvider(name = "Data for bad mood")
     public Object[][] dataForBadMood() {
         return new Object[][]{
-                {Month.JULY, 500_000, false},
-                {Month.JANUARY, 1_000_001, false},
-                {Month.JANUARY, 500_000, true}
+                {Month.JULY, (double) 500_000, false},
+                {Month.JANUARY, (double) 1_000_001, false},
+                {Month.JANUARY, (double) 500_000, true}
         };
     }
 
@@ -69,9 +69,9 @@ public class BoyTest extends BaseTest {
     @DataProvider(name = "Data for spend some money")
     public Object[][] dataSpendSomeMoney() {
         return new Object[][]{
-                {0, 0, 0},
-                {1_000_000, 600_000, 400_000},
-                {1_000_000, 1_000_000, 0}
+                {(double) 0, (double) 0, (double) 0},
+                {(double) 1_000_000, (double) 600_000, (double) 400_000},
+                {(double) 1_000_000, (double) 1_000_000, (double) 0}
         };
     }
 
@@ -128,8 +128,8 @@ public class BoyTest extends BaseTest {
     @DataProvider(name = "Data for is rich")
     public Object[][] dataForIsRich() {
         return new Object[][]{
-                {1_000_000},
-                {1_000_001},
+                {(double) 1_000_000},
+                {(double) 1_000_001},
         };
     }
 
@@ -142,8 +142,8 @@ public class BoyTest extends BaseTest {
     @DataProvider(name = "Data for is not rich")
     public Object[][] dataForNotIsRich() {
         return new Object[][]{
-                {0},
-                {999_999},
+                {(double) 0},
+                {(double) 999_999},
         };
     }
 
