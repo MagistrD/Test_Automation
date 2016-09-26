@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Group test suite">
+    <test name="Group constructors all methods test">
+        <groups>
+            <run>
+                <include name="constructors"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="BoyTest"/>
+        </classes>
+    </test>
+</suite>

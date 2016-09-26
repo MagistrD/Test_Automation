@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Boy test suite">
+    <listeners>
+        <listener class-name="com.epam.gomel.homework.Listener"/>
+    </listeners>
+    <test name="Boy all methods test">
+
+        <classes>
+            <class name="BoyTest"/>
+        </classes>
+    </test>
+</suite>
