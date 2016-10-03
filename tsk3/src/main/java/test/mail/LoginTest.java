@@ -1,4 +1,4 @@
-package test;
+package test.mail;
 
 import runner.driver.TimeOutsEnum;
 import org.openqa.selenium.By;
@@ -11,8 +11,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page.ErrorLoginPage;
-import page.LoginPage;
+import page.mail.ErrorLoginPage;
+import page.mail.LoginPage;
 
 public class LoginTest {
     private WebDriver driver;

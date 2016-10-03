@@ -1,12 +1,12 @@
-package test;
+package test.mail;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page.HomePage;
-import page.LoginPage;
+import page.mail.HomePage;
+import page.mail.LoginPage;
 
 import static runner.driver.TimeOutsEnum.IMPLICIT_WAIT;
 import static runner.driver.TimeOutsEnum.PAGE_LOAD;
