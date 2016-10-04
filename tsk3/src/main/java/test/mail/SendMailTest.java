@@ -42,12 +42,12 @@ public class SendMailTest {
     public void sendMailWithAllAttributesAndCheckItInSendTest() {
         homePage.sendMsgWithAllAttributes(CORRECT_LOGIN, SUBJECT, MESSAGE);
         driver.get(INBOX_MASSAGES);
-        Assert.assertTrue(homePage.checkUnreadMail(), "Excepted true");
+        Assert.assertTrue(homePage.isUnreadMailPresented(), "Excepted true");
     }
 
     @Test(priority = 1)
     public void checkInFolderSendTest() {
-        Assert.assertTrue(homePage.checkUnreadMail(), "Excepted true");
+        Assert.assertTrue(homePage.isUnreadMailPresented(), "Excepted true");
     }
 
     @Test(priority = 2)

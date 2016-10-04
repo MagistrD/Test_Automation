@@ -47,7 +47,7 @@ public class HomePage {
         trySendMail(address, subject, message);
     }
 
-    public boolean checkUnreadMail() {
+    public boolean isUnreadMailPresented() {
         driver.navigate().refresh();
         WebElement unreadPoint = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.
                 visibilityOfElementLocated(UNREAD_POINT_LOCATOR));
@@ -72,7 +72,7 @@ public class HomePage {
         trySendMail(address, subject, message);
         driver.findElement(By.xpath("//div[@class='is-compose-empty_in']//span")).click();
         driver.get(INBOX_MASSAGES);
-        if (checkUnreadMail()) {
+        if (isUnreadMailPresented()) {
             driver.get(SENT_MESSAGES);
             WebElement mailList = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.
                     visibilityOfElementLocated(By.xpath("//div[@class='b-datalist__item js-datalist-item']")));
@@ -97,12 +97,19 @@ public class HomePage {
         Actions actions = new Actions(driver);
         actions.click(textBox).sendKeys(message);
         driver.switchTo().defaultContent();
+
+
+
         WebElement saveDraft = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.
                 visibilityOfElementLocated(SAVE_DRAFT_LOCATOR));
         saveDraft.click();
         driver.get(DRAFT_MESSAGES);
         driver.switchTo().alert().accept();
         driver.switchTo().defaultContent();
+
+
+
+
         WebElement checkbox = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.
                 visibilityOfElementLocated(By.
                         xpath("//div[@class='js-checkbox b-checkbox b-checkbox_transparent "
@@ -110,6 +117,10 @@ public class HomePage {
                                 "b-checkbox_false js-shortcut']//div")));
         checkbox.click();
         driver.findElement(By.xpath("//div[@data-shortcut-title='Del']")).click();
+
+
+
+
         driver.get(TRASH_MESSAGES);
         driver.findElement(By.xpath("//button[@data-name='clearFolder']")).click();
         driver.findElement(By.xpath("//button[@class='btn btn_stylish confirm-ok']")).click();

@@ -37,20 +37,29 @@ public class LoginTest {
     }
 
     @Test
+         public void loginToMailWithCorrectLoginAndPasswordTest() {
+        loginAndCheckLogin(CORRECT_LOGIN, CORRECT_PASSWORD);
+    }
+
+    @Test
     public void loginToMailWithCorrectPasswordTest() {
+        loginAndCheckLogin(CORRECT_LOGIN, CORRECT_PASSWORD);
+    }
+
+    public void loginAndCheckLogin(String login, String pass) {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(CORRECT_LOGIN, CORRECT_PASSWORD);
+        loginPage.login(login, pass);
         WebElement userLogin = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.visibilityOfElementLocated(AUTHORISATION_USER_EMAIL_LOCATOR));
-        Assert.assertEquals(userLogin.getText(), CORRECT_LOGIN);
+        Assert.assertEquals(userLogin.getText(), login);
     }
 
     @Test
     public void loginToMailWithInCorrectPasswordTest() {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
-        ErrorLoginPage errorLoginPage = loginPage.errorLoginPage(CORRECT_LOGIN, INCORRECT_PASSWORD);
-        Assert.assertTrue(errorLoginPage.getErrorMsg(), "Expected incorrect login or password");
+        ErrorLoginPage errorLoginPage = loginPage.loginAndGetElements(CORRECT_LOGIN, INCORRECT_PASSWORD);
+        Assert.assertTrue(errorLoginPage.isErrorMsg(), "Expected incorrect login or password");
     }
 
     @AfterClass
