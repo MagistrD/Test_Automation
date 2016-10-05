@@ -39,18 +39,22 @@ public class SendMailTest {
     }
 
     @Test
-    public void sendMailWithAllAttributesAndCheckItInSendTest() {
-        homePage.sendMsgWithAllAttributes(CORRECT_LOGIN, SUBJECT, MESSAGE);
+    public void sendMailWithAllAttributesAndCheckItInInboxTest() {
+        homePage.sendMail(CORRECT_LOGIN);
         driver.get(INBOX_MASSAGES);
-        Assert.assertTrue(homePage.isUnreadMailPresented(), "Excepted true");
+        driver.navigate().refresh();
+        Assert.assertTrue(homePage.isMailMatches(), "Excepted true");
     }
 
-    @Test(priority = 1)
-    public void checkInFolderSendTest() {
-        Assert.assertTrue(homePage.isUnreadMailPresented(), "Excepted true");
+    @Test
+    public void sendMailWithAllAttributesAndCheckItInSendTest() {
+        homePage.sendMail(CORRECT_LOGIN);
+        driver.get(SENT_MESSAGES);
+        driver.navigate().refresh();
+        Assert.assertTrue(homePage.isMailMatches(), "Excepted true");
     }
 
-    @Test(priority = 2)
+    @Test
     public void checkSendMailWithoutSubjectAndBodyTest() {
         Assert.assertTrue(homePage.sendMailWithoutSubjectAndBody(CORRECT_LOGIN, null, null), "Excepted true");
     }

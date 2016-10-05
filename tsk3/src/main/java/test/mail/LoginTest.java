@@ -1,6 +1,5 @@
 package test.mail;
 
-import runner.driver.TimeOutsEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.mail.ErrorLoginPage;
 import page.mail.LoginPage;
+import runner.driver.TimeOutsEnum;
 
 public class LoginTest {
     private WebDriver driver;
@@ -37,29 +37,20 @@ public class LoginTest {
     }
 
     @Test
-         public void loginToMailWithCorrectLoginAndPasswordTest() {
-        loginAndCheckLogin(CORRECT_LOGIN, CORRECT_PASSWORD);
-    }
-
-    @Test
     public void loginToMailWithCorrectPasswordTest() {
-        loginAndCheckLogin(CORRECT_LOGIN, CORRECT_PASSWORD);
-    }
-
-    public void loginAndCheckLogin(String login, String pass) {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.login(login, pass);
+        loginPage.login(CORRECT_LOGIN, CORRECT_PASSWORD);
         WebElement userLogin = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.visibilityOfElementLocated(AUTHORISATION_USER_EMAIL_LOCATOR));
-        Assert.assertEquals(userLogin.getText(), login);
+        Assert.assertEquals(userLogin.getText(), CORRECT_LOGIN);
     }
 
     @Test
     public void loginToMailWithInCorrectPasswordTest() {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
-        ErrorLoginPage errorLoginPage = loginPage.loginAndGetElements(CORRECT_LOGIN, INCORRECT_PASSWORD);
-        Assert.assertTrue(errorLoginPage.isErrorMsg(), "Expected incorrect login or password");
+        ErrorLoginPage errorLoginPage = loginPage.errorLoginPage(CORRECT_LOGIN, INCORRECT_PASSWORD);
+        Assert.assertTrue(errorLoginPage.getErrorMsg(), "Expected incorrect loginTest or password");
     }
 
     @AfterClass
