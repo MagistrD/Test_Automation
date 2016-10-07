@@ -16,7 +16,6 @@ public class LoginPage {
         this.driver = driver;
     }
 
-
     public void login(String mail, String password) {
         driver.findElement(LOGIN_INBOX_LOCATOR).sendKeys(mail);
         driver.findElement(PASSWORD_INBOX_LOCATOR).sendKeys(password);
