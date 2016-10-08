@@ -22,7 +22,6 @@ public class SendMailTest {
         loginTest.setUp();
         homePage = new HomePage(driver);
         loginTest.login();
-
     }
 
     @Test
