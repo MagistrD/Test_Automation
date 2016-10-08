@@ -29,6 +29,10 @@ public class LoginTest {
         setUp();
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     public void setUp() {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT.getValue(), IMPLICIT_WAIT.getTimeUnit());
@@ -65,7 +69,7 @@ public class LoginTest {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
         ErrorLoginPage errorLoginPage = loginPage.errorLoginPage(login, password);
-        Assert.assertTrue(errorLoginPage.getErrorMsg(), "Expected incorrect loginTest or password");
+        Assert.assertTrue(errorLoginPage.isErrorMsg(), "Expected incorrect loginTest or password");
     }
 
     @AfterMethod

@@ -2,6 +2,7 @@ package test.mail;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import page.mail.HomePage;
@@ -19,7 +20,10 @@ public class SendMailTest {
 
     @BeforeMethod
     private void setUpDriverAndLogin() {
+        //driver = new FirefoxDriver();
+        loginTest = new LoginTest();
         loginTest.setUp();
+        driver = loginTest.getDriver();
         homePage = new HomePage(driver);
         loginTest.login();
     }
@@ -54,5 +58,10 @@ public class SendMailTest {
     @Test
     public void draftMailTest() {
         Assert.assertTrue(homePage.draftMail(CORRECT_LOGIN), "Expected true");
+    }
+
+    @AfterMethod
+    public void killDriver() {
+        driver.quit();
     }
 }

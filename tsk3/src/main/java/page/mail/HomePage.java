@@ -92,7 +92,7 @@ public class HomePage {
 
     private void sendKeysToMailBody() {
         message = randomString();
-        WebElement textFrame = driver.findElement(By.xpath("//iframe[contains(@id, '_composeEditor_ifr')]"));
+        WebElement textFrame = driver.findElement(By.xpath("//iframe[contains(@id, 'composeEditor_ifr')]"));
         driver.switchTo().frame(textFrame);
         WebElement textBox = driver.findElement(By.xpath("//*[@id='tinymce']"));
         Actions actions = new Actions(driver);
