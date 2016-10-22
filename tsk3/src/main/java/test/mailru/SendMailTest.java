@@ -1,30 +1,25 @@
-package test;
+package test.mailru;
 
+import mailru.page.HomePage;
+import mailru.page.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page.HomePage;
-import page.LoginPage;
 
 import static runner.driver.TimeOutsEnum.IMPLICIT_WAIT;
 import static runner.driver.TimeOutsEnum.PAGE_LOAD;
 
 public class SendMailTest {
-    private WebDriver driver;
-    private HomePage homePage;
-
     private static final String MAIL_RU = "https://mail.ru";
     private static final String INBOX_MASSAGES = "https://e.mail.ru/messages/inbox/";
-    private static final String SENT_MESSAGES = "https://e.mail.ru/messages/sent/";
     private static final String CORRECT_LOGIN = "magistr-dante@mail.ru";
-    private static final String INCORRECT_LOGIN = "magistr-nodante";
-
     private static final String CORRECT_PASSWORD = "09052011mail.ru";
     private static final String SUBJECT = "test";
     private static final String MESSAGE = "test test";
-
+    private WebDriver driver;
+    private HomePage homePage;
 
     @BeforeMethod
     private void setUpDriverAndLogin() {

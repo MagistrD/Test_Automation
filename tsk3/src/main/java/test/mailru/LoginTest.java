@@ -1,6 +1,5 @@
-package test;
+package test.mailru;
 
-import runner.driver.TimeOutsEnum;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,11 +10,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import page.ErrorLoginPage;
-import page.LoginPage;
+import mailru.page.ErrorLoginPage;
+import mailru.page.LoginPage;
+import runner.driver.TimeOutsEnum;
+
 
 public class LoginTest {
-    private WebDriver driver;
 
     private static final String CORRECT_LOGIN = "magistr-dante@mail.ru";
     private static final String CORRECT_PASSWORD = "09052011mail.ru";
@@ -28,6 +28,8 @@ public class LoginTest {
     private static final By LOGIN_SUBMIT_BUTTON_LOCATOR = By.xpath("//input[@id='mailbox__auth__button']");
     private static final By AUTHORISATION_USER_EMAIL_LOCATOR = By.xpath("//i[@id='PH_user-email']");
     private static final By LABEL_INCORRECT_USERNAME_OR_PASSWORD_LOCATOR = By.xpath(" ");
+
+    private WebDriver driver;
 
     @BeforeMethod
     private void setUpDriver() {

@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tsk2/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/tsk3/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tsk3/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tsk3/src/main/resources" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

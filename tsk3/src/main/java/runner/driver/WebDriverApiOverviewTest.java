@@ -98,7 +98,7 @@ public class WebDriverApiOverviewTest {
         driver.get(YA_RU);
         System.out.println("Log types: " + driver.manage().logs().getAvailableLogTypes());
         System.out.println("Browser logs :");
-        LogEntries logEntries = driver.manage().logs().get("browser");
+        LogEntries logEntries = driver.manage().logs().get("ui");
         for (LogEntry logEntry : logEntries.getAll()) {
             System.out.println(logEntry);
         }

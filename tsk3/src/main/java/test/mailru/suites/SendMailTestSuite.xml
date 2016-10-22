@@ -3,7 +3,7 @@
         <test name="Send Mail test">
 
         <classes>
-            <class name="test.SendMailTest"/>
+            <class name="test.mailru.LoginTest"/>
         </classes>
     </test>
 </suite>
