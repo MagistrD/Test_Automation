@@ -11,8 +11,8 @@ public class YaMailService {
         yaMailPage.clickYaDisk();
     }
 
-    public boolean isUserNamePresent() {
-        return yaMailPage.isUserNamePresent(AUTHORIZED_USERNAME_LOCATOR);
+    public boolean isUserNamePresent(String s) {
+        return yaMailPage.isUserNamePresent(s);
     }
 
     public void closeBrowser() {

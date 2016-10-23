@@ -19,7 +19,8 @@ public class YandexLoginTest {
         yaMailService = new YaMailService();
         Account account = new Account(LOGIN, PASSWORD);
         loginService.login(account);
-        Assert.assertTrue(yaMailService.isUserNamePresent(), "Incorrect login");
+
+        Assert.assertTrue(yaMailService.isUserNamePresent(LOGIN), "Incorrect login");
     }
 
     @AfterTest
