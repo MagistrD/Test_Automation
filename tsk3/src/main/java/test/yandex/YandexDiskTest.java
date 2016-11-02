@@ -39,7 +39,7 @@ public class YandexDiskTest {
     }
 
     @Test
-    public void uploadDownloadFileTest() throws IOException {
+    public void uploadDownloadFileTest() throws IOException, InterruptedException {
         yaMailService.getYaDisk();
         fileUtil.newFile();
         String fileName = fileUtil.getFileName();
@@ -47,7 +47,6 @@ public class YandexDiskTest {
         yaDiskService.downloadFile(fileName);
         Assert.assertTrue(FileUtils.contentEquals(new File(FILES_FOLDER + fileName),
                 new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
-        yaDiskService.moveFileToTrash(fileName);
     }
 
     @Test
@@ -75,7 +74,6 @@ public class YandexDiskTest {
         trashService.restoreFile(fileName);
         trashService.getToYaDrive();
         Assert.assertTrue(yaDiskService.isRestore(fileName), "File is not restore");
-        yaDiskService.moveFileToTrash(fileName);
     }
 
     @Test
@@ -99,7 +97,7 @@ public class YandexDiskTest {
 
     @AfterMethod
     public void quitBrowser() throws IOException {
-        trashService.clearTrash();
+        //trashService.clearTrash();
         yaDiskService.closeBrowser();
         File filesFolder = new File(FILES_FOLDER);
         clean.clearDerictory(filesFolder);

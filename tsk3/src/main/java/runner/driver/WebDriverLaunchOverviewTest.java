@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import runner.Parameters;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,13 +32,17 @@ public class WebDriverLaunchOverviewTest {
     @Test(description = "Firefox remote launch")
     public void firefoxRemoteLaunch() throws MalformedURLException {
         // java -jar selenium-server-standalone.jar -port 4444
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.firefox());
+        driver = new RemoteWebDriver(new URL("http://" + Parameters.instance().getHost() + ":"
+                + Parameters.instance().getPort() + "/wd/hub"), DesiredCapabilities.firefox());
+        //driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.firefox());
         driver.get(YANDEX_START_PAGE);
     }
 
     @Test(description = "Chrome remote launch")
     public void chromeRemoteLaunch() throws MalformedURLException {
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.chrome());
+        driver = new RemoteWebDriver(new URL("http://" + Parameters.instance().getHost() + ":"
+                + Parameters.instance().getPort() + "/wd/hub"), DesiredCapabilities.chrome());
+        //driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.chrome());
         driver.get(YANDEX_START_PAGE);
     }
 }

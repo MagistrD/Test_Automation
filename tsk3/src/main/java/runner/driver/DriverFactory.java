@@ -1,5 +1,6 @@
 package runner.driver;
 
+import listeners.WebDriverListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -7,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import runner.Parameters;
 
 import java.io.File;
 import java.util.HashMap;
@@ -16,10 +19,10 @@ import static runner.driver.TimeOutsEnum.*;
 public class DriverFactory {
 
     public static final String DOWNLOADS_PATH = "./tsk3/src/main/resources/downloads/";
-    public static final String PATH_TO_CHROME_DRIVER = "./tsk3/src/main/resources/chromedriver.exe";
+    //public static final String PATH_TO_CHROME_DRIVER = "./tsk3/src/main/resources/chromedriver.exe";
 
     public static WebDriver chromeDriver() {
-        System.setProperty("webdriver.chrome.driver", PATH_TO_CHROME_DRIVER);
+        System.setProperty("webdriver.chrome.driver", Parameters.instance().getChromeDriver());
 
         String downloadFilepath = DOWNLOADS_PATH;
         HashMap<String, Object> chromePrefs = new HashMap<>();
@@ -58,6 +61,11 @@ public class DriverFactory {
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD.getValue(), PAGE_LOAD.getTimeUnit());
         driver.manage().window().maximize();
 
-        return driver;
+        EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
+        eventFiringWebDriver.register(WebDriverListener.create());
+
+
+        return eventFiringWebDriver;
     }
+
 }

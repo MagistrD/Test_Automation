@@ -1,15 +1,17 @@
 package ui;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import logging.Log;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import runner.Parameters;
 import runner.driver.DriverFactory;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Browser implements WrapsDriver {
     public static final int ELEMENT_WAIT_TIMEOUT_SECONDS = 60;
@@ -20,9 +22,6 @@ public class Browser implements WrapsDriver {
     public Browser browser;
 
     public Browser() {
-        //System.setProperty("webdriver.chrome.driver", "tsk3/src/main/java.resources/chromedriver.exe");
-
-        //browser = getDriver();
         setDriver(getDriver());
     }
 
@@ -39,7 +38,16 @@ public class Browser implements WrapsDriver {
 
     public synchronized WebDriver getDriver() {
         if (instance == null) {
-            instance = DriverFactory.firefoxDriver();
+            switch (Parameters.instance().getBrowserType()) {
+                case CHROME:
+                    instance = DriverFactory.chromeDriver();
+                    break;
+                case FIREFOX:
+                    instance = DriverFactory.firefoxDriver();
+                    break;
+                default:
+                    throw new RuntimeException("No support for" + Parameters.instance().getBrowserType().toString());
+            }
         }
         return instance;
     }
@@ -58,26 +66,10 @@ public class Browser implements WrapsDriver {
         }
     }
 
-//    public boolean isPresent(String s) {
-//        try {
-//            return Browser.getDriver().isElementPresent(By.xpath(String.format(STRING_LOCATOR, s)));
-//        } catch (TimeoutException e) {
-//            return false;
-//        }
-//    }
-
-    //    public boolean isVisible() {
-//        return Browser.getDriver().isElementVisible(by);
-//    }
-//
     public void waitForElementVisible(String locator) {
         WebDriverWait wait = new WebDriverWait(driver, ELEMENT_WAIT_TIMEOUT_SECONDS);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
     }
-//
-//    public String getText() {
-//        return getWrappedWebElement().getText();
-//    }
 
     public static void click(String locator) {
         findElement(locator).click();
@@ -121,14 +113,10 @@ public class Browser implements WrapsDriver {
         }
     }
 
-    @Override
+
     public WebDriver getWrappedDriver() {
         return driver;
     }
-
-//    public void closeBrowser() {
-//        driver.quit();
-//    }
 
     public static void open(String url) {
         driver.get(url);
@@ -145,18 +133,21 @@ public class Browser implements WrapsDriver {
         return driver.findElements(By.xpath(String.format(STRING_LOCATOR, locator))).size() > 0;
     }
 
-
     public static boolean isElementNotPresent(String s) {
         return driver.findElements(By.xpath(s)).size() == 0;
     }
-//
-//    public boolean isElementVisible(By by) {
-//        if (!isElementPresent(by)) {
-//            return false;
-//        }
-//        return findElement(by).isDisplayed();
-//    }
-//
+
+    public static byte[] screenshot() {
+        File screenshotFile = new File("logs/screenshots/" + System.nanoTime() + ".png");
+        try {
+            byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            FileUtils.writeByteArrayToFile(screenshotFile, screenshotBytes);
+            Log.info("Screenshot taken: file:///" + screenshotFile.getAbsolutePath());
+            return screenshotBytes;
+        } catch (IOException e) {
+            throw new CommonTestRuntimeException("Failed to write screenshot: ", e);
+        }
+    }
 
 
 }

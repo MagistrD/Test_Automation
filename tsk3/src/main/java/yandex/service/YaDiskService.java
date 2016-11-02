@@ -10,7 +10,7 @@ public class YaDiskService {
         yaDiskPage.sendFile(s);
     }
 
-    public void downloadFile(String s) {
+    public void downloadFile(String s) throws InterruptedException {
         yaDiskPage.downloadFile(s);
     }
 

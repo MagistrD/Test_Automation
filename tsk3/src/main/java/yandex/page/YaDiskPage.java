@@ -20,15 +20,13 @@ public class YaDiskPage extends Browser {
         click(CLOSE_UPLOAD_DIALOG_BUTTON_LOCATOR);
     }
 
-    public void downloadFile(String s) {
+    public void downloadFile(String s) throws InterruptedException {
         String uploadFileLocator = "//div[@title='" + s + "']";
         waitForElementIsPresent(uploadFileLocator);
-        System.out.println(s + " в методе download");
-        System.out.println(uploadFileLocator + " локатор");
         click(uploadFileLocator);
         waitForElementIsPresent(DOWNLOAD_FILE_BUTTON_LOCATOR);
         click(DOWNLOAD_FILE_BUTTON_LOCATOR);
-
+        Thread.sleep(3000);
     }
 
     public void moveToTrash(String s) {
