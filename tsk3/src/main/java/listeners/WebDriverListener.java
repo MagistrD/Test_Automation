@@ -16,7 +16,6 @@ public class WebDriverListener extends AbstractWebDriverEventListener {
     @Override
     public void afterNavigateTo(String url, WebDriver driver) {
         Log.info("Browser navigate to " + url);
-        Browser.screenshot();
         super.afterNavigateTo(url, driver);
     }
 

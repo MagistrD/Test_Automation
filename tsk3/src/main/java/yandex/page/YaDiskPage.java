@@ -1,8 +1,13 @@
 package yandex.page;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import runner.driver.DriverFactory;
 import ui.Browser;
+
+import java.io.File;
+import java.io.IOException;
 
 public class YaDiskPage extends Browser {
 
@@ -20,13 +25,17 @@ public class YaDiskPage extends Browser {
         click(CLOSE_UPLOAD_DIALOG_BUTTON_LOCATOR);
     }
 
-    public void downloadFile(String s) throws InterruptedException {
+    public void downloadFile(String s) throws InterruptedException, IOException {
         String uploadFileLocator = "//div[@title='" + s + "']";
         waitForElementIsPresent(uploadFileLocator);
         click(uploadFileLocator);
         waitForElementIsPresent(DOWNLOAD_FILE_BUTTON_LOCATOR);
         click(DOWNLOAD_FILE_BUTTON_LOCATOR);
-        Thread.sleep(3000);
+        File file = new File(DriverFactory.DOWNLOADS_PATH + s);
+        File directory = new File(DriverFactory.DOWNLOADS_PATH);
+        while (!FileUtils.directoryContains(directory, file)) {
+            Thread.sleep(100);
+        }
     }
 
     public void moveToTrash(String s) {

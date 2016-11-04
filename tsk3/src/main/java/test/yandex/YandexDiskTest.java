@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import runner.driver.DriverFactory;
 import util.Clean;
 import util.FileUtil;
@@ -45,6 +46,7 @@ public class YandexDiskTest {
         String fileName = fileUtil.getFileName();
         yaDiskService.uploadFile(fileName);
         yaDiskService.downloadFile(fileName);
+        System.out.println("1");
         Assert.assertTrue(FileUtils.contentEquals(new File(FILES_FOLDER + fileName),
                 new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
     }
@@ -100,8 +102,8 @@ public class YandexDiskTest {
         //trashService.clearTrash();
         yaDiskService.closeBrowser();
         File filesFolder = new File(FILES_FOLDER);
-        clean.clearDerictory(filesFolder);
+        clean.cleanDirectory(filesFolder);
         File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
-        clean.clearDerictory(downloadsFolder);
+        clean.cleanDirectory(downloadsFolder);
     }
 }

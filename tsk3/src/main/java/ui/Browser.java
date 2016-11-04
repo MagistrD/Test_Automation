@@ -16,7 +16,6 @@ import java.io.IOException;
 public class Browser implements WrapsDriver {
     public static final int ELEMENT_WAIT_TIMEOUT_SECONDS = 60;
     private static String STRING_LOCATOR = "//*[contains(text(), '%s')]";
-
     private static WebDriver instance;
     private static WebDriver driver;
     public Browser browser;
@@ -25,16 +24,13 @@ public class Browser implements WrapsDriver {
         setDriver(getDriver());
     }
 
-
     public static WebElement findElement(String locator) {
         return driver.findElement(By.xpath(locator));
     }
 
-
     public static void setDriver(WebDriver driver) {
         Browser.driver = driver;
     }
-
 
     public synchronized WebDriver getDriver() {
         if (instance == null) {
@@ -84,7 +80,6 @@ public class Browser implements WrapsDriver {
     }
 
     public static void typeValue(String locator, String value) {
-        //Element loginInput = new Element(By.xpath(LOGIN_INPUT_LOCATOR))
         WebElement element = findElement(locator);
         element.clear();
         element.sendKeys(value);
@@ -112,7 +107,6 @@ public class Browser implements WrapsDriver {
             instance = null;
         }
     }
-
 
     public WebDriver getWrappedDriver() {
         return driver;

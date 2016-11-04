@@ -25,13 +25,6 @@ public class Parameters {
     @Parameter(names = {"--suite", "-st"}, description = "Suites path")
     private String suitePath = "test-suites/YandexDriveTestSuite.xml";
 
-//    private List<String> suitePath = new ArrayList<String>();
-//    {
-//        //suitePath.add("test-suites/LoginTestSuite.xml");
-//        suitePath.add("test-suites/YandexDriveTestSuite.xml");
-//    }
-
-
     public static synchronized Parameters instance() {
         if (instance == null) {
             instance = new Parameters();

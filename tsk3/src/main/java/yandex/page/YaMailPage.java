@@ -12,7 +12,8 @@ public class YaMailPage extends Browser {
 
     public void clickYaDisk() {
         waitForElementIsPresent(YANDEX_DISK_BUTTON_LOCATOR);
-        clickA(YANDEX_DISK_BUTTON_LOCATOR);
+        open("https://disk.yandex.ru/client/disk");
+        //clickA(YANDEX_DISK_BUTTON_LOCATOR);
     }
 
 }

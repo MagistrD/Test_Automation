@@ -23,11 +23,7 @@ public class LoginTest {
     private static final int WAIT_TIME = 20;
 
     private static final String MAIL_RU = "https://mail.ru";
-    private static final By LOGIN_INBOX_LOCATOR = By.xpath(".//input[@id='mailbox__login']");
-    private static final By PASSWORD_INBOX_LOCATOR = By.xpath(".//input[@id='mailbox__password']");
-    private static final By LOGIN_SUBMIT_BUTTON_LOCATOR = By.xpath("//input[@id='mailbox__auth__button']");
     private static final By AUTHORISATION_USER_EMAIL_LOCATOR = By.xpath("//i[@id='PH_user-email']");
-    private static final By LABEL_INCORRECT_USERNAME_OR_PASSWORD_LOCATOR = By.xpath(" ");
 
     private WebDriver driver;
 

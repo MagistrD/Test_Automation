@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Clean {
 
-    public void clearDerictory(File folder) throws IOException {
+    public void cleanDirectory(File folder) throws IOException {
         FileUtils.cleanDirectory(folder);
     }
 }

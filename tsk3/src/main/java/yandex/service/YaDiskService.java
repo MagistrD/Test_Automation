@@ -2,6 +2,8 @@ package yandex.service;
 
 import yandex.page.YaDiskPage;
 
+import java.io.IOException;
+
 public class YaDiskService {
 
     private YaDiskPage yaDiskPage = new YaDiskPage();
@@ -10,7 +12,7 @@ public class YaDiskService {
         yaDiskPage.sendFile(s);
     }
 
-    public void downloadFile(String s) throws InterruptedException {
+    public void downloadFile(String s) throws InterruptedException, IOException {
         yaDiskPage.downloadFile(s);
     }
 

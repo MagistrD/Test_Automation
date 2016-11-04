@@ -19,7 +19,6 @@ import static runner.driver.TimeOutsEnum.*;
 public class DriverFactory {
 
     public static final String DOWNLOADS_PATH = "./tsk3/src/main/resources/downloads/";
-    //public static final String PATH_TO_CHROME_DRIVER = "./tsk3/src/main/resources/chromedriver.exe";
 
     public static WebDriver chromeDriver() {
         System.setProperty("webdriver.chrome.driver", Parameters.instance().getChromeDriver());
@@ -54,9 +53,10 @@ public class DriverFactory {
         fxProfile.setPreference("browser.download.dir", file.getAbsolutePath());
         fxProfile.setEnableNativeEvents(true);
         fxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/plain, text/txt");
-
+        //fp.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/csv, application/octet-stream")
+//        fxProfile.updateUserPrefs();
         WebDriver driver = new FirefoxDriver(fxProfile);
-
+        //driver = new FirefoxDriver(ffprofile);
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT.getValue(), IMPLICIT_WAIT.getTimeUnit());
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD.getValue(), PAGE_LOAD.getTimeUnit());
         driver.manage().window().maximize();
@@ -64,8 +64,7 @@ public class DriverFactory {
         EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
         eventFiringWebDriver.register(WebDriverListener.create());
 
-
-        return eventFiringWebDriver;
+        return driver;
     }
 
 }

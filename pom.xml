@@ -116,12 +116,14 @@
             <version>${aspectj.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>RELEASE</version>
-
+            <version>6.8.21</version>
         </dependency>
+
+
 
         <dependency>
             <groupId>org.hamcrest</groupId>
