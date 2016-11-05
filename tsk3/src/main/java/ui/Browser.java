@@ -136,7 +136,7 @@ public class Browser implements WrapsDriver {
         try {
             byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             FileUtils.writeByteArrayToFile(screenshotFile, screenshotBytes);
-            Log.info("Screenshot taken: file:///" + screenshotFile.getAbsolutePath());
+            Log.info("Screenshot taken: file://" + screenshotFile.getAbsolutePath());
             return screenshotBytes;
         } catch (IOException e) {
             throw new CommonTestRuntimeException("Failed to write screenshot: ", e);
