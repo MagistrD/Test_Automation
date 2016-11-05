@@ -26,16 +26,18 @@ public class YaDiskPage extends Browser {
     }
 
     public void downloadFile(String s) throws InterruptedException, IOException {
+
         String uploadFileLocator = "//div[@title='" + s + "']";
         waitForElementIsPresent(uploadFileLocator);
         click(uploadFileLocator);
         waitForElementIsPresent(DOWNLOAD_FILE_BUTTON_LOCATOR);
-        click(DOWNLOAD_FILE_BUTTON_LOCATOR);
         File file = new File(DriverFactory.DOWNLOADS_PATH + s);
         File directory = new File(DriverFactory.DOWNLOADS_PATH);
+        click(DOWNLOAD_FILE_BUTTON_LOCATOR);
         while (!FileUtils.directoryContains(directory, file)) {
             Thread.sleep(100);
         }
+
     }
 
     public void moveToTrash(String s) {

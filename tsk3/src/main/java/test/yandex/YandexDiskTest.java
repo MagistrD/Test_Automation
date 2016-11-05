@@ -46,7 +46,6 @@ public class YandexDiskTest {
         String fileName = fileUtil.getFileName();
         yaDiskService.uploadFile(fileName);
         yaDiskService.downloadFile(fileName);
-        System.out.println("1");
         Assert.assertTrue(FileUtils.contentEquals(new File(FILES_FOLDER + fileName),
                 new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
     }

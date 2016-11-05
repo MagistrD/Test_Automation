@@ -39,7 +39,6 @@ public class DriverFactory {
 
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT.getValue(), IMPLICIT_WAIT.getTimeUnit());
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD.getValue(), PAGE_LOAD.getTimeUnit());
-        //driver.manage().timeouts().setScriptTimeout(SCRIPT_TIMEOUT.getValue(), SCRIPT_TIMEOUT.getUnit());
         driver.manage().window().maximize();
 
         return driver;
@@ -53,10 +52,7 @@ public class DriverFactory {
         fxProfile.setPreference("browser.download.dir", file.getAbsolutePath());
         fxProfile.setEnableNativeEvents(true);
         fxProfile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/plain, text/txt");
-        //fp.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/csv, application/octet-stream")
-//        fxProfile.updateUserPrefs();
         WebDriver driver = new FirefoxDriver(fxProfile);
-        //driver = new FirefoxDriver(ffprofile);
         driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT.getValue(), IMPLICIT_WAIT.getTimeUnit());
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD.getValue(), PAGE_LOAD.getTimeUnit());
         driver.manage().window().maximize();
@@ -64,7 +60,5 @@ public class DriverFactory {
         EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
         eventFiringWebDriver.register(WebDriverListener.create());
 
-        return driver;
-    }
-
-}
+        return eventFiringWebDriver;
+    }}
