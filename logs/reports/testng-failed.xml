@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Yandex disk test suite]">
+  <test name="Yandex disk tests(failed)">
+    <classes>
+      <class name="test.yandex.YandexDiskTest">
+        <methods>
+          <include name="login"/>
+          <include name="quitBrowser"/>
+          <include name="uploadDownloadFileTest"/>
+        </methods>
+      </class> <!-- test.yandex.YandexDiskTest -->
+    </classes>
+  </test> <!-- Yandex disk tests(failed) -->
+</suite> <!-- Failed suite [Yandex disk test suite] -->

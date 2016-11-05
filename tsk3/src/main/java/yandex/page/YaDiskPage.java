@@ -35,7 +35,7 @@ public class YaDiskPage extends Browser {
         File directory = new File(DriverFactory.DOWNLOADS_PATH);
         click(DOWNLOAD_FILE_BUTTON_LOCATOR);
         while (!FileUtils.directoryContains(directory, file)) {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         }
 
     }

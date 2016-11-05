@@ -1,0 +1,710 @@
+16:44:08,668  INFO - Parse CLIs using JCommander
+16:44:08,731  INFO - Test start
+16:44:09,249  INFO - TEST START Yandex disk tests
+16:44:22,104  INFO - Browser navigate to https://www.yandex.by/
+16:44:22,105  INFO - Before find By.xpath: //input[@name='login']
+16:44:22,433  INFO - Before find By.xpath: //input[@name='passwd']
+16:44:23,532  INFO - Before find By.xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']
+16:44:23,596  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (60138d7e-9cb3-408c-b52e-3dba9d48597b)] -> xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']]
+16:44:23,889  INFO - Before find By.xpath: //a[@data-id='disk']
+16:44:26,075  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 2.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60138d7e-9cb3-408c-b52e-3dba9d48597b
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:44:26,204  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77593021745086.png
+16:44:26,704  INFO - Before find By.xpath: //a[@data-id='disk']
+16:44:27,805  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 1.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60138d7e-9cb3-408c-b52e-3dba9d48597b
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:44:28,864  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77594751052649.png
+16:44:29,365  INFO - Before find By.xpath: //a[@data-id='disk']
+16:44:30,914  INFO - Before find By.xpath: //a[@data-id='disk']
+16:44:30,952  INFO - Before find By.xpath: //a[@data-id='disk']
+16:44:31,276  INFO - Before find By.xpath: //input[@type='file']
+16:44:35,093  INFO - Before find By.xpath: //input[@type='file']
+16:44:36,853  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:44:37,719  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:44:37,935  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:44:37,969  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (60138d7e-9cb3-408c-b52e-3dba9d48597b)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:44:38,138  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:44:38,284  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:38,303  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:44:38,781  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:44:39,225  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:40,468  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@title='Op.txt']"}
+Command duration or timeout: 1.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60138d7e-9cb3-408c-b52e-3dba9d48597b
+*** Element info: {Using=xpath, value=//div[@title='Op.txt']}
+16:44:40,603  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77607414452488.png
+16:44:41,105  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:42,157  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@title='Op.txt']"}
+Command duration or timeout: 1.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60138d7e-9cb3-408c-b52e-3dba9d48597b
+*** Element info: {Using=xpath, value=//div[@title='Op.txt']}
+16:44:42,282  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77609103596500.png
+16:44:42,784  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:43,844  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@title='Op.txt']"}
+Command duration or timeout: 1.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 60138d7e-9cb3-408c-b52e-3dba9d48597b
+*** Element info: {Using=xpath, value=//div[@title='Op.txt']}
+16:44:43,982  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77610790543736.png
+16:44:44,483  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:45,729  INFO - Before find By.xpath: //div[@title='Op.txt']
+16:44:45,818  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (60138d7e-9cb3-408c-b52e-3dba9d48597b)] -> xpath: //div[@title='Op.txt']]
+16:44:45,980  INFO - Before find By.xpath: //button[@data-click-action='resource.restore']
+16:44:46,211  INFO - Before find By.xpath: //button[@data-click-action='resource.restore']
+16:44:46,234  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (60138d7e-9cb3-408c-b52e-3dba9d48597b)] -> xpath: //button[@data-click-action='resource.restore']]
+16:44:46,408  INFO - Before find By.xpath: //*[@title='Яндекс.Диск']
+16:44:46,611  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (60138d7e-9cb3-408c-b52e-3dba9d48597b)] -> xpath: //*[@title='Яндекс.Диск']]
+16:44:46,993  INFO - Before find By.xpath: //*[contains(text(), 'Op.txt')]
+16:44:47,246  INFO - Before find By.xpath: //*[contains(text(), 'Op.txt')]
+16:45:00,124  INFO - Browser navigate to https://www.yandex.by/
+16:45:00,125  INFO - Before find By.xpath: //input[@name='login']
+16:45:00,524  INFO - Before find By.xpath: //input[@name='passwd']
+16:45:01,747  INFO - Before find By.xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']
+16:45:01,998  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (6b9e778b-3519-44c2-8d03-bbdb8242ccc0)] -> xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']]
+16:45:03,866  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:04,914  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 1.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b9e778b-3519-44c2-8d03-bbdb8242ccc0
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:45:05,019  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77631860010566.png
+16:45:05,519  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:06,582  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 1.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b9e778b-3519-44c2-8d03-bbdb8242ccc0
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:45:06,715  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77633528740586.png
+16:45:07,215  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:09,586  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:10,034  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:10,448  INFO - Before find By.xpath: //input[@type='file']
+16:45:14,390  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@type='file']"}
+Command duration or timeout: 3.94 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6b9e778b-3519-44c2-8d03-bbdb8242ccc0
+*** Element info: {Using=xpath, value=//input[@type='file']}
+16:45:14,786  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77641336070935.png
+16:45:15,287  INFO - Before find By.xpath: //input[@type='file']
+16:45:15,310  INFO - Before find By.xpath: //input[@type='file']
+16:45:16,628  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:17,695  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:17,755  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:17,798  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (6b9e778b-3519-44c2-8d03-bbdb8242ccc0)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:45:17,962  INFO - Before find By.xpath: //input[@type='file']
+16:45:18,130  INFO - Before find By.xpath: //input[@type='file']
+16:45:18,213  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:18,901  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:18,986  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:19,020  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (6b9e778b-3519-44c2-8d03-bbdb8242ccc0)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:45:19,179  INFO - Before find By.xpath: //input[@type='file']
+16:45:19,429  INFO - Before find By.xpath: //input[@type='file']
+16:45:19,514  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:20,262  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:20,430  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:20,454  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (6b9e778b-3519-44c2-8d03-bbdb8242ccc0)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:45:20,719  INFO - Before find By.xpath: //div[@title='p4.txt']
+16:45:20,857  INFO - Before find By.xpath: //div[@title='rX.txt']
+16:45:20,881  INFO - Before find By.xpath: //div[@title='38.txt']
+16:45:22,343  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:22,373  INFO - Before find By.xpath: //div[@title='p4.txt']
+16:45:22,394  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:22,807  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:23,313  INFO - Before find By.xpath: //*[contains(text(), 'p4.txt')]
+16:45:23,790  INFO - Before find By.xpath: //*[contains(text(), 'p4.txt')]
+16:45:23,814  INFO - Before find By.xpath: //*[contains(text(), 'rX.txt')]
+16:45:23,837  INFO - Before find By.xpath: //*[contains(text(), 'rX.txt')]
+16:45:23,867  INFO - Before find By.xpath: //*[contains(text(), '38.txt')]
+16:45:23,906  INFO - Before find By.xpath: //*[contains(text(), '38.txt')]
+16:45:37,022  INFO - Browser navigate to https://www.yandex.by/
+16:45:37,023  INFO - Before find By.xpath: //input[@name='login']
+16:45:37,347  INFO - Before find By.xpath: //input[@name='passwd']
+16:45:38,685  INFO - Before find By.xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']
+16:45:38,731  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (40ef7c7b-50eb-4c26-ba5f-199115de1a0c)] -> xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']]
+16:45:40,557  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:41,625  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 1.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40ef7c7b-50eb-4c26-ba5f-199115de1a0c
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:45:41,725  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77668571540893.png
+16:45:42,226  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:43,298  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 1.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40ef7c7b-50eb-4c26-ba5f-199115de1a0c
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:45:43,403  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77670245272671.png
+16:45:43,904  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:46,249  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:46,286  INFO - Before find By.xpath: //a[@data-id='disk']
+16:45:46,956  INFO - Before find By.xpath: //input[@type='file']
+16:45:51,279  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//input[@type='file']"}
+Command duration or timeout: 4.32 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40ef7c7b-50eb-4c26-ba5f-199115de1a0c
+*** Element info: {Using=xpath, value=//input[@type='file']}
+16:45:51,663  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77678224698038.png
+16:45:52,163  INFO - Before find By.xpath: //input[@type='file']
+16:45:53,051  INFO - Before find By.xpath: //input[@type='file']
+16:45:53,213  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:54,142  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:55,070  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:55,610  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:56,167  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:56,722  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:56,924  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:45:56,974  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (40ef7c7b-50eb-4c26-ba5f-199115de1a0c)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:45:57,411  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:57,601  INFO - Before find By.xpath: //div[@title='Q.txt']
+16:45:57,627  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:58,534  INFO - Before find By.xpath: //div[contains(text(), 'Корз')]
+16:45:59,043  INFO - Before find By.xpath: //div[@title='Q.txt']
+16:46:00,172  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@title='Q.txt']"}
+Command duration or timeout: 1.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40ef7c7b-50eb-4c26-ba5f-199115de1a0c
+*** Element info: {Using=xpath, value=//div[@title='Q.txt']}
+16:46:00,285  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77687117933326.png
+16:46:00,786  INFO - Before find By.xpath: //div[@title='Q.txt']
+16:46:01,934  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@title='Q.txt']"}
+Command duration or timeout: 1.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40ef7c7b-50eb-4c26-ba5f-199115de1a0c
+*** Element info: {Using=xpath, value=//div[@title='Q.txt']}
+16:46:02,160  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77688880454455.png
+16:46:02,661  INFO - Before find By.xpath: //div[@title='Q.txt']
+16:46:03,459  INFO - Before find By.xpath: //div[@title='Q.txt']
+16:46:03,491  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (40ef7c7b-50eb-4c26-ba5f-199115de1a0c)] -> xpath: //div[@title='Q.txt']]
+16:46:03,664  INFO - Before find By.xpath: //button[@data-click-action='resource.delete']
+16:46:03,923  INFO - Before find By.xpath: //button[@data-click-action='resource.delete']
+16:46:03,940  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (40ef7c7b-50eb-4c26-ba5f-199115de1a0c)] -> xpath: //button[@data-click-action='resource.delete']]
+16:46:04,154  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,513  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,544  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,569  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,602  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,630  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,660  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,689  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,733  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,788  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,815  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,850  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,885  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,913  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,935  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,964  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:04,986  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,018  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,051  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,080  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,104  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,128  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,156  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,183  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,208  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,233  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,268  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,293  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,319  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,357  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,385  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,413  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,437  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,481  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,517  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,547  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,586  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,623  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,656  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,683  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,708  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,730  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,754  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,783  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,808  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,833  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,867  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,890  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,914  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,934  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,955  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:05,980  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,001  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,024  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,049  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,075  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,099  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,122  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,150  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,171  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,202  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,233  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,256  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,282  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,305  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,420  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,494  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,521  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,544  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,566  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,588  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,611  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,632  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,653  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,674  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,705  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,733  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,756  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,783  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,807  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,833  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,894  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,949  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,968  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:06,997  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,016  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,103  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,126  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,143  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,163  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,183  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,199  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,217  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,234  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,251  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,267  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,285  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,366  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,388  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,414  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,439  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,456  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,475  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,491  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,506  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,522  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,538  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,553  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,569  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,586  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,605  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,622  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,639  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,657  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,674  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,692  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,714  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,730  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,749  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,773  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,798  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,819  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,838  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,856  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,873  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,891  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,909  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,934  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,949  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,964  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:07,980  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,000  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,017  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,034  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,053  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,073  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,097  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,113  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,129  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,144  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,160  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,176  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,208  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,240  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,286  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,322  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,345  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,372  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,398  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,423  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,465  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,508  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,543  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,580  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,611  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,649  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,679  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,716  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,744  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,763  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,787  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,809  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,836  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,864  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,895  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,926  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,955  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:08,978  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,004  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,028  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,110  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,143  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,173  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,196  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,220  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,241  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,266  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,287  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,306  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,330  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,350  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,370  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,389  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,407  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,424  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,439  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,454  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,469  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,484  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,499  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,514  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,529  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,548  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,565  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,584  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,602  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,619  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,635  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,651  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,667  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,682  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,699  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,715  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,731  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,746  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,763  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,782  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,798  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,814  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,830  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,852  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,869  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,884  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,899  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,914  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,935  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,953  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,968  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:09,986  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,003  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,019  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,037  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,053  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,070  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,086  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,104  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,130  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,148  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,163  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,180  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,196  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,212  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,229  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,245  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,261  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,278  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,293  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,308  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,323  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,337  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,355  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,371  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,387  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,507  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,567  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,586  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,607  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,626  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,647  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,722  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,742  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,761  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,781  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,801  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,851  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,874  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,892  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,909  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,926  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,944  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,979  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:10,996  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,012  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,028  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,044  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,065  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,088  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,105  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,125  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,141  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,157  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,174  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,191  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,209  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,225  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,240  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,255  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,270  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,288  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,319  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,339  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,355  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,373  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,389  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,405  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,420  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,435  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,450  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,465  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,542  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,560  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,576  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,595  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,611  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,628  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,643  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,659  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,674  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,689  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,704  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,721  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,736  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,752  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,769  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,835  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,852  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,870  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,885  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,902  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,927  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,943  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,960  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,979  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:11,995  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,011  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,027  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,046  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,063  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,080  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,102  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,119  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,136  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,156  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,177  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,194  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,212  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,233  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,250  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,266  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,282  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,307  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,323  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,338  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,354  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,370  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,387  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,405  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,421  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,438  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,458  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,474  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,491  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,506  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,521  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,536  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,551  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,566  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,581  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,598  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,614  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,634  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,655  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,674  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,690  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,707  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,722  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,737  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,752  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,768  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,783  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,798  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,815  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,832  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,848  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,865  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,883  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,901  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,927  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,944  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,970  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:12,992  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,012  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,032  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,056  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,083  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,121  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,143  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,243  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,261  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,280  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,304  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,333  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,360  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,377  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,396  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,415  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,433  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,450  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,474  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,497  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,517  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,536  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,558  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,574  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,591  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,606  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,621  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,639  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,654  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,670  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,687  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,711  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,736  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,758  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,775  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,793  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,809  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,825  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,842  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,857  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,873  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,892  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,911  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,928  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,946  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,963  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:13,981  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,001  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,018  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,034  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,049  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,066  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,083  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,100  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:14,117  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:46:15,138  INFO - Before find By.xpath: //*[contains(text(), 'Q.txt')]
+16:47:09,985  INFO - Browser navigate to https://www.yandex.by/
+16:47:09,985  INFO - Before find By.xpath: //input[@name='login']
+16:47:10,324  INFO - Before find By.xpath: //input[@name='passwd']
+16:47:11,306  INFO - Before find By.xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']
+16:47:11,354  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (27faaad0-de41-4d37-b294-48c755ee13b9)] -> xpath: //button[@class='button auth__button domik2__auth-button button_theme_bordergray button_size_m i-bem button_js_inited auth__button_color_yellow']]
+16:47:11,727  INFO - Before find By.xpath: //a[@data-id='disk']
+16:47:14,364  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 2.63 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 27faaad0-de41-4d37-b294-48c755ee13b9
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:47:14,476  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77761310078660.png
+16:47:14,976  INFO - Before find By.xpath: //a[@data-id='disk']
+16:47:17,008  INFO - Driver has exception org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[@data-id='disk']"}
+Command duration or timeout: 2.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Magistr-PC', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 27faaad0-de41-4d37-b294-48c755ee13b9
+*** Element info: {Using=xpath, value=//a[@data-id='disk']}
+16:47:19,577  INFO - Screenshot taken: file://D:\EPAM\TAT2\logs\screenshots\77763954008724.png
+16:47:20,077  INFO - Before find By.xpath: //a[@data-id='disk']
+16:47:20,157  INFO - Before find By.xpath: //a[@data-id='disk']
+16:47:20,193  INFO - Before find By.xpath: //a[@data-id='disk']
+16:47:20,405  INFO - Before find By.xpath: //input[@type='file']
+16:47:24,476  INFO - Before find By.xpath: //input[@type='file']
+16:47:24,803  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:47:26,893  INFO - Before find By.xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']
+16:47:26,916  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (27faaad0-de41-4d37-b294-48c755ee13b9)] -> xpath: //button[@class=' nb-button _nb-small-button b-dialog-upload__button-close ns-action js-hide']]
+16:47:27,087  INFO - Before find By.xpath: //div[@title='oc.txt']
+16:47:27,483  INFO - Before find By.xpath: //div[@title='oc.txt']
+16:47:27,516  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (27faaad0-de41-4d37-b294-48c755ee13b9)] -> xpath: //div[@title='oc.txt']]
+16:47:27,669  INFO - Before find By.xpath: //button[@title='Скачать']
+16:47:28,181  INFO - Before find By.xpath: //button[@title='Скачать']
+16:47:28,212  INFO - Before click on [[FirefoxDriver: firefox on WINDOWS (27faaad0-de41-4d37-b294-48c755ee13b9)] -> xpath: //button[@title='Скачать']]
+16:47:30,820  INFO - TEST FINISH Yandex disk tests
+16:47:31,242  INFO - Testing finish
