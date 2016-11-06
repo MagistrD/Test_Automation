@@ -37,4 +37,10 @@ public class WebDriverListener extends AbstractWebDriverEventListener {
         Browser.screenshot();
         super.onException(throwable, driver);
     }
+
+    @Override
+    public void afterClickOn(WebElement element, WebDriver driver) {
+        Log.info("After click on " + element);
+        super.afterClickOn(element, driver);
+    }
 }

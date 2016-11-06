@@ -3,7 +3,6 @@ package yandex.page;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
-import runner.driver.DriverFactory;
 import ui.Browser;
 
 import java.io.File;
@@ -20,19 +19,19 @@ public class YaDiskPage extends Browser {
 
     public void sendFile(String s) {
         waitForElementIsPresent(SEND_FILE_BUTTON_LOCATOR);
-        sendFile(SEND_FILE_BUTTON_LOCATOR, PATH + s);
+        sendFile(SEND_FILE_BUTTON_LOCATOR, s);
         waitForElementVisible(CLOSE_UPLOAD_DIALOG_BUTTON_LOCATOR);
         click(CLOSE_UPLOAD_DIALOG_BUTTON_LOCATOR);
     }
 
     public void downloadFile(String s) throws InterruptedException, IOException {
-
         String uploadFileLocator = "//div[@title='" + s + "']";
         waitForElementIsPresent(uploadFileLocator);
         click(uploadFileLocator);
         waitForElementIsPresent(DOWNLOAD_FILE_BUTTON_LOCATOR);
-        File file = new File(DriverFactory.DOWNLOADS_PATH + s);
-        File directory = new File(DriverFactory.DOWNLOADS_PATH);
+        File file = new File(/*DriverFactory.DOWNLOADS_PATH + */  "download/" + s);
+        File directory = new File(/*DriverFactory.DOWNLOADS_PATH*/ "download");
+        directory.mkdir();
         click(DOWNLOAD_FILE_BUTTON_LOCATOR);
         while (!FileUtils.directoryContains(directory, file)) {
             Thread.sleep(1000);

@@ -11,7 +11,7 @@ public class FileUtil {
 
     public void newFile() throws IOException {
         fileName = randomString.randomString();
-        String relativePath = "./tsk3/src/main/resources/files/" + fileName + ".txt";
+        String relativePath = fileName + ".txt";
         File file = new File(relativePath);
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(randomString.randomString());

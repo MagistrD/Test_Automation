@@ -5,8 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import runner.driver.DriverFactory;
 import util.Clean;
 import util.FileUtil;
 import yandex.bo.Account;
@@ -42,12 +40,21 @@ public class YandexDiskTest {
     @Test
     public void uploadDownloadFileTest() throws IOException, InterruptedException {
         yaMailService.getYaDisk();
+        System.out.println("Before file creating");
+
         fileUtil.newFile();
+        System.out.println("File create");
         String fileName = fileUtil.getFileName();
+        System.out.println("get File name");
+
         yaDiskService.uploadFile(fileName);
+        System.out.println("get File name");
+
         yaDiskService.downloadFile(fileName);
-        Assert.assertTrue(FileUtils.contentEquals(new File(FILES_FOLDER + fileName),
-                new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
+        System.out.println("get File name");
+
+        Assert.assertTrue(FileUtils.contentEquals(new File(fileName),
+                new File("download/" + fileName)), "Upload file is not equal Download file");
     }
 
     @Test(priority = 1)
@@ -100,9 +107,9 @@ public class YandexDiskTest {
     public void quitBrowser() throws IOException {
         //trashService.clearTrash();
         yaDiskService.closeBrowser();
-        File filesFolder = new File(FILES_FOLDER);
-        clean.cleanDirectory(filesFolder);
-        File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
-        clean.cleanDirectory(downloadsFolder);
+//        File filesFolder = new File(FILES_FOLDER);
+//        clean.cleanDirectory(filesFolder);
+//        File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
+//        clean.cleanDirectory(downloadsFolder);
     }
 }

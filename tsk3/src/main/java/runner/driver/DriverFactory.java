@@ -46,7 +46,8 @@ public class DriverFactory {
 
     public static WebDriver firefoxDriver() {
         FirefoxProfile fxProfile = new FirefoxProfile();
-        File file = new File(DOWNLOADS_PATH);
+        //File file = new File(DOWNLOADS_PATH);
+        File file = new File("download");
         fxProfile.setPreference("browser.download.folderList", 2);
         fxProfile.setPreference("browser.download.manager.showWhenStarting", false);
         fxProfile.setPreference("browser.download.dir", file.getAbsolutePath());
@@ -60,6 +61,6 @@ public class DriverFactory {
         EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
         eventFiringWebDriver.register(WebDriverListener.create());
 
-        return eventFiringWebDriver;
+        return driver;
     }
 }
