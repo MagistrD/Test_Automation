@@ -50,7 +50,7 @@ public class YandexDiskTest {
                 new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
     }
 
-    @Test(enabled = true)
+    @Test(priority = 1)
     public void trashTest() throws IOException, InterruptedException {
         yaMailService.getYaDisk();
         fileUtil.newFile();
@@ -63,7 +63,7 @@ public class YandexDiskTest {
         Assert.assertTrue(trashService.isRemoved(fileName), "File is not removed");
     }
 
-    @Test(enabled = true)
+    @Test(priority = 1)
     public void restoreTest() throws IOException, InterruptedException {
         trashService = new TrashService();
         yaMailService.getYaDisk();
@@ -77,7 +77,7 @@ public class YandexDiskTest {
         Assert.assertTrue(yaDiskService.isRestore(fileName), "File is not restore");
     }
 
-    @Test
+    @Test(priority = 1)
     public void severalElementsTest() throws IOException {
         trashService = new TrashService();
         yaMailService.getYaDisk();
