@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
-import ui.Browser;
 
 public class WebDriverListener extends AbstractWebDriverEventListener {
 
@@ -34,7 +33,7 @@ public class WebDriverListener extends AbstractWebDriverEventListener {
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
         Log.info("Driver has exception " + throwable.toString());
-        Browser.screenshot();
+        //Browser.screenshot();
         super.onException(throwable, driver);
     }
 }
