@@ -12,7 +12,6 @@ public class Runner {
 
     public static TestNG configureTestNG() {
         TestNG testNG = new TestNG();
-//        testNG.setOutputDirectory("./logs/reports");
         testNG.addListener(new TestListener());
         testNG.setTestSuites(Arrays.asList(Parameters.instance().getSuitePath()));
         return testNG;

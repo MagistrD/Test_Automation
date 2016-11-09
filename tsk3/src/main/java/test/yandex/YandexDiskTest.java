@@ -20,7 +20,6 @@ public class YandexDiskTest {
 
     private static final String LOGIN = "vlad.litoshik@yandex.ru";
     private static final String PASSWORD = "litoshik";
-    private static final String FILES_FOLDER = "./tsk3/src/main/resources/files/";
 
     private FileUtil fileUtil = new FileUtil();
     private Clean clean = new Clean();
@@ -40,19 +39,10 @@ public class YandexDiskTest {
     @Test
     public void uploadDownloadFileTest() throws IOException, InterruptedException {
         yaMailService.getYaDisk();
-        System.out.println("Before file creating");
-
         fileUtil.newFile();
-        System.out.println("File create");
         String fileName = fileUtil.getFileName();
-        System.out.println("get File name");
-
         yaDiskService.uploadFile(fileName);
-        System.out.println("get File name");
-
         yaDiskService.downloadFile(fileName);
-        System.out.println("get File name");
-
         Assert.assertTrue(FileUtils.contentEquals(new File(fileName),
                 new File("download/" + fileName)), "Upload file is not equal Download file");
     }

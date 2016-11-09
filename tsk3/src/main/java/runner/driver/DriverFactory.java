@@ -18,7 +18,7 @@ import static runner.driver.TimeOutsEnum.*;
 
 public class DriverFactory {
 
-    public static final String DOWNLOADS_PATH = "./tsk3/src/main/resources/downloads/";
+    public static final String DOWNLOADS_PATH = "./downloads/";
 
     public static WebDriver chromeDriver() {
         System.setProperty("webdriver.chrome.driver", Parameters.instance().getChromeDriver());
@@ -61,6 +61,6 @@ public class DriverFactory {
         EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
         eventFiringWebDriver.register(WebDriverListener.create());
 
-        return driver;
+        return eventFiringWebDriver;
     }
 }
