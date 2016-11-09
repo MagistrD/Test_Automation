@@ -1,4 +1,4 @@
-Meta: check Aliexpress Cart
+Feature: check Aliexpress Cart
 
 Narrative:
 As a login user

@@ -9,8 +9,8 @@ import org.jbehave.core.annotations.When;
 import org.junit.Assert;
 
 public class AliCartSteps {
-    CartPageService cartPageService = new CartPageService();
-    ProductPageService productPageService = new ProductPageService();
+    private CartPageService cartPageService = new CartPageService();
+    private ProductPageService productPageService = new ProductPageService();
 
     @When("I go to cart")
     public void goToCart() {
@@ -35,7 +35,8 @@ public class AliCartSteps {
     }
 
     @AfterStories
-    public void closeBrowser(){
+    public void closeBrowser() {
+        cartPageService.closeBrowser();
     }
 
 

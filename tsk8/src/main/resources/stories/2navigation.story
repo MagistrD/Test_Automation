@@ -1,4 +1,4 @@
-Meta: Check aliexpress navigation
+Feature: Check aliexpress navigation
 
 Narrative:
 As a login user
@@ -8,7 +8,3 @@ So that I can check aliexpress navigation functionality
 Scenario: Aliexpress navigation result
 When I select category and item from navigation
 Then I see item page
-
-!--Examples:
-!--|category                         |item    |
-!--|Компьютеры и сетевое оборудование|Ноутбуки|

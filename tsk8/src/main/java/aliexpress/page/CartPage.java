@@ -20,4 +20,8 @@ public class CartPage extends Browser {
     public boolean isCardEmpty() {
         return isElementPresent(EMPTY_CART_TITLE);
     }
+
+    public void closeBrowser() {
+        close();
+    }
 }

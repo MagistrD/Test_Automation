@@ -15,7 +15,4 @@ public class MainPage extends Browser {
         click(SEE_ALL_LOCATOR);
     }
 
-    public void closeBrowser() {
-        close();
-    }
 }

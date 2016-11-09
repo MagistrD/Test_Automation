@@ -16,8 +16,4 @@ public class MainPageService {
     public boolean isLogin() {
         return mainPage.isUserNamePresent();
     }
-
-    public void closeBrowser() {
-        mainPage.closeBrowser();
-    }
 }
