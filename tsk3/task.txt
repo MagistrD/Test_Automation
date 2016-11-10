@@ -21,7 +21,7 @@ Check that mail exists in folder Sent and in folder Inbox.
 ●	Check you can send mail without subject and body, check that mail is present in Sent and Inbox folders.
 ●	Create draft mail, and delete it. Check that mail appeared in Trash. Delete it permanently and check that mail is deleted.
 Home task recommendations:
-●	Use in your tests preconditions for common actions e.g. browser setup, login and so on.
+●	Use in your tests preconditions for common actions e.g. ui setup, login and so on.
 ●	Create utility class that will give you instance of WebDriver to use.
 ●	Split your tests by steps do not mix all actions in one method.
 ●	Add postfix "Test" to your test class name (naming convention).

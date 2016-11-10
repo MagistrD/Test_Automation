@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SendMail test suite">
+        <test name="Send Mail test">
+
+        <classes>
+            <class name="test.mailru.LoginTest"/>
+        </classes>
+    </test>
+</suite>
