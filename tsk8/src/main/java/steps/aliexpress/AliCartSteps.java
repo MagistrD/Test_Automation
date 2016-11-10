@@ -1,4 +1,4 @@
-package steps;
+package steps.aliexpress;
 
 import aliexpress.service.CartPageService;
 import aliexpress.service.ProductPageService;
