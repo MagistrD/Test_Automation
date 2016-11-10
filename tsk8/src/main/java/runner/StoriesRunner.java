@@ -11,7 +11,10 @@ import org.jbehave.core.junit.AnnotatedEmbedderRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import report.StoryReportBuilder;
-import steps.*;
+import steps.aliexpress.*;
+import steps.mail.MailInboxSteps;
+import steps.mail.MailLoginSteps;
+import steps.mail.MailNewLetterSteps;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,9 +24,10 @@ import java.util.List;
 @Configure(storyReporterBuilder = StoryReportBuilder.class)
 @UsingEmbedder(embedder = Embedder.class, generateViewAfterStories = true, metaFilters = "-skip")
 @UsingSteps(instances = {AliLoginSteps.class, AliNavigationSteps.class, AliBrandSearchSteps.class, AliProductSteps.class,
-        AliCartSteps.class})
+        AliCartSteps.class, MailLoginSteps.class, MailNewLetterSteps.class, MailInboxSteps.class})
+
 public class StoriesRunner implements Embeddable {
-    private Embedder embedder;
+        private Embedder embedder;
 
     public void useEmbedder(Embedder embedder) {
         this.embedder = embedder;
