@@ -101,7 +101,7 @@ public class Browser implements WrapsDriver {
     public void close() {
         try {
             if (getWrappedDriver() != null) {
-                getWrappedDriver().quit();
+                getWrappedDriver().close();
             }
         } finally {
             instance = null;
@@ -143,5 +143,23 @@ public class Browser implements WrapsDriver {
         }
     }
 
+    public void moveToElement(String locator) {
+        new Actions(getWrappedDriver())
+                .moveToElement(findElement(locator))
+                .build()
+                .perform();
+    }
 
+    public String getPageTitle() {
+        return driver.getTitle();
+    }
+
+    public void switchToFrame(String locator) {
+        WebElement frame = driver.findElement(By.xpath(locator));
+        driver.switchTo().frame(frame);
+    }
+
+    public void switchToDefault() {
+        driver.switchTo().defaultContent();
+    }
 }

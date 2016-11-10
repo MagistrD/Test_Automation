@@ -162,5 +162,19 @@
             <version>1.58</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.jbehave/jbehave-core -->
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-core</artifactId>
+            <version>4.0.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jbehave.web/jbehave-web-selenium -->
+        <dependency>
+            <groupId>org.jbehave.web</groupId>
+            <artifactId>jbehave-web-selenium</artifactId>
+            <version>3.5.5</version>
+        </dependency>
+
     </dependencies>
 </project>
