@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="cam.epam.unit_testing.core(failed)">
+    <classes>
+      <class name="test.mail.SendMailTest">
+        <methods>
+          <include name="sendMailWithoutSubjectAndBodyTest"/>
+          <include name="killDriver"/>
+          <include name="sendMailWithAllAttributesAndCheckItInInboxTest"/>
+          <include name="sendMailWithAllAttributesAndCheckItInSendTest"/>
+          <include name="sendMailWithoutAddressTest"/>
+          <include name="setUpDriverAndLogin"/>
+        </methods>
+      </class> <!-- test.mail.SendMailTest -->
+      <class name="test.mail.LoginTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="killDriver"/>
+        </methods>
+      </class> <!-- test.mail.LoginTest -->
+    </classes>
+  </test> <!-- cam.epam.unit_testing.core(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login test suite">
+    <test name="Login all methods test">
+        <classes>
+            <class name="test.mail.LoginTest"/>
+        </classes>
+    </test>
+</suite>

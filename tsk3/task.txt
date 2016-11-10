@@ -1,0 +1,31 @@
+Hometask 3 (DeadLine: Friday 30.09)
+
+You will need to create tests for Mail.Ru (supposed that you have registered account).
+Requirements
+1.	Use RemoteWebdriver to run your tests using Chrome and Firefox.
+100 % 2.	Put your tests to /src/main/java because this is not a unit testing already.
+100 % 3.	Use TestRunner that you created in bounds of home task 2 (L5).
+100 % 4.	Set implicitly wait timeout in 1 second.
+100 % 5.	Create folder in resources where you put your xml suites.
+100 % 6.	You need configured Maven checkstyle plugin.
+Project that doesn’t pass validation will not be accepted for review.
+(how to configure see demo in repository  https://bitbucket.org/avasilyeu/gomel-tat2016q3-demo (branch L6)).
+7.	Create your tests using PageObjects (at least 1 PageObject should be done via PageFactory).
+100 % 8.	For testing use selenium-java version 2.53.1, use firefox 47.0.1 (disable updates, if need, because higher versions not supported anymore)
+Need to write tests for following cases:
+●	Test login into mail using credentials (positive and negative check)
+●	Test send mail. You fill all fields properly and send mail
+(send mail to same address you used for sent).
+Check that mail exists in folder Sent and in folder Inbox.
+●	Try to send mail without properly filled address, check error is present.
+●	Check you can send mail without subject and body, check that mail is present in Sent and Inbox folders.
+●	Create draft mail, and delete it. Check that mail appeared in Trash. Delete it permanently and check that mail is deleted.
+Home task recommendations:
+●	Use in your tests preconditions for common actions e.g. browser setup, login and so on.
+●	Create utility class that will give you instance of WebDriver to use.
+●	Split your tests by steps do not mix all actions in one method.
+●	Add postfix "Test" to your test class name (naming convention).
+●	One test case per one java class!
+●	Each @Test should contain assert (message shown, letter disappeared in folder, etc).
+●	Use explicit waits, if you need to wait some state.
+●	Do not forget to configure your xml suites for both cases.

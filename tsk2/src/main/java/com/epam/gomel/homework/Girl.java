@@ -63,6 +63,4 @@ public class Girl extends Human {
     public boolean isSlimFriendBecameFat() {
         return isSlimFriendGotAFewKilos() && !isPretty();
     }
-
-
 }
