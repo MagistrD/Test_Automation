@@ -4,5 +4,5 @@
 .settings
 *.idea
 test-output/
+
 /logs/
-/cam.epam.unit_testing.core.iml
