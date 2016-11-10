@@ -5,8 +5,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import runner.driver.DriverFactory;
 import util.Clean;
 import util.FileUtil;
 import yandex.bo.Account;
@@ -22,7 +20,6 @@ public class YandexDiskTest {
 
     private static final String LOGIN = "vlad.litoshik@yandex.ru";
     private static final String PASSWORD = "litoshik";
-    private static final String FILES_FOLDER = "./tsk3/src/main/resources/files/";
 
     private FileUtil fileUtil = new FileUtil();
     private Clean clean = new Clean();
@@ -46,8 +43,8 @@ public class YandexDiskTest {
         String fileName = fileUtil.getFileName();
         yaDiskService.uploadFile(fileName);
         yaDiskService.downloadFile(fileName);
-        Assert.assertTrue(FileUtils.contentEquals(new File(FILES_FOLDER + fileName),
-                new File(DriverFactory.DOWNLOADS_PATH + fileName)), "Upload file is not equal Download file");
+        Assert.assertTrue(FileUtils.contentEquals(new File(fileName),
+                new File("download/" + fileName)), "Upload file is not equal Download file");
     }
 
     @Test(priority = 1)
@@ -100,9 +97,9 @@ public class YandexDiskTest {
     public void quitBrowser() throws IOException {
         //trashService.clearTrash();
         yaDiskService.closeBrowser();
-        File filesFolder = new File(FILES_FOLDER);
-        clean.cleanDirectory(filesFolder);
-        File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
-        clean.cleanDirectory(downloadsFolder);
+//        File filesFolder = new File(FILES_FOLDER);
+//        clean.cleanDirectory(filesFolder);
+//        File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
+//        clean.cleanDirectory(downloadsFolder);
     }
 }

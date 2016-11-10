@@ -8,7 +8,7 @@ public class Parameters {
     private static Parameters instance;
 
     @Parameter(names = {"--chrome", "-c"}, description = "Path to Google Chrome Driver")
-    private String chromeDriver = "./tsk3/src/main/resources/chromedriver.exe";
+    private String chromeDriver = "chromedriver.exe";
 
     @Parameter(names = "--help", help = true, description = "How to use")
     private boolean help;

@@ -18,7 +18,7 @@ import static runner.driver.TimeOutsEnum.*;
 
 public class DriverFactory {
 
-    public static final String DOWNLOADS_PATH = "./tsk3/src/main/resources/downloads/";
+    public static final String DOWNLOADS_PATH = "./downloads/";
 
     public static WebDriver chromeDriver() {
         System.setProperty("webdriver.chrome.driver", Parameters.instance().getChromeDriver());
@@ -46,7 +46,8 @@ public class DriverFactory {
 
     public static WebDriver firefoxDriver() {
         FirefoxProfile fxProfile = new FirefoxProfile();
-        File file = new File(DOWNLOADS_PATH);
+        //File file = new File(DOWNLOADS_PATH);
+        File file = new File("download");
         fxProfile.setPreference("browser.download.folderList", 2);
         fxProfile.setPreference("browser.download.manager.showWhenStarting", false);
         fxProfile.setPreference("browser.download.dir", file.getAbsolutePath());
