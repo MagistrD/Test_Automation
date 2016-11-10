@@ -1,0 +1,9 @@
+/target/
+.classpath
+.project
+.settings
+*.idea
+test-output/
+/logs/
+/.idea/
+/cam.epam.unit_testing.core.iml
