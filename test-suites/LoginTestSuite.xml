@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="YaDisk test suite">
-    <test name="YaDisk all methods test">
+<suite name="Login to yandex test suite">
+    <test name="Yandex login test">
         <classes>
             <class name="test.yandex.YandexLoginTest"/>
         </classes>

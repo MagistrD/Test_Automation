@@ -48,15 +48,11 @@ public class WebDriverApiOverviewTest {
         driver.navigate().back();
         driver.navigate().forward();
         driver.navigate().refresh();
-
-        // driver.close();
-        // driver.quit();
     }
 
     @Test
     public void driverBasicGetters() {
         driver.get(YA_RU);
-
         System.out.println("Current URL: " + driver.getCurrentUrl());
         System.out.println("Page Source: " + driver.getPageSource());
         System.out.println("Page title: " + driver.getTitle());
@@ -67,14 +63,12 @@ public class WebDriverApiOverviewTest {
     @Test
     public void driverManageCookies() {
         driver.get(YA_RU);
-
         System.out.println("Cookies: " + driver.manage().getCookies());
     }
 
     @Test
     public void driverManageWindows() {
         driver.get(YA_RU);
-
         System.out.println("Position: " + driver.manage().window().getPosition());
         System.out.println("Size: " + driver.manage().window().getSize());
         driver.manage().window().maximize();
@@ -107,7 +101,6 @@ public class WebDriverApiOverviewTest {
     @Test
     public void driverByLocators() {
         driver.get(YA_RU);
-
         By.id("element-id");
         By.name("element-name");
         By.className("class-name");
@@ -122,8 +115,6 @@ public class WebDriverApiOverviewTest {
     public void driverFindingElements() {
         driver.get(YA_RU);
         driver.findElement(SEARCH_BAR_LOCATOR).click();
-        // driver.findElement(By.className("")).findElement(By.className(""));
-        // driver.findElement(By.className("")).findElements(By.cssSelector(""));
     }
 
     @Test
@@ -162,20 +153,16 @@ public class WebDriverApiOverviewTest {
 
         driver.switchTo().frame("iframeResult");
 
-        // Special for select tags
         Select select = new Select(driver.findElement(By.tagName("select")));
 
-        // Select : select smth
         select.selectByIndex(1);
         select.selectByValue("audi");
         select.selectByVisibleText("Saab");
 
-        // Select : get options / get selected
         select.getOptions();
         select.getFirstSelectedOption();
         select.getAllSelectedOptions();
 
-        // Select : deselect smth
         select.deselectAll();
         select.deselectByIndex(1);
         select.deselectByValue("Test");
@@ -201,16 +188,6 @@ public class WebDriverApiOverviewTest {
 
     @Test
     public void driverSwitchTo() {
-        // switch
-        // driver.switchTo().window("");
-        // driver.switchTo().frame(1);
-        // driver.switchTo().frame("nameOrId");
-        // driver.switchTo().frame(driver.findElement(By.id("")));
-        // driver.switchTo().parentFrame();
-        // driver.switchTo().defaultContent();
-        // driver.switchTo().activeElement();
-
-        // alert ops
         driver.get("http://the-internet.herokuapp.com/javascript_alerts");
         driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
         driver.switchTo().alert().accept();
@@ -220,9 +197,5 @@ public class WebDriverApiOverviewTest {
         System.out.println("Alert message: " + driver.switchTo().alert().getText());
         driver.switchTo().alert().sendKeys("Hello");
         driver.switchTo().alert().accept();
-
-        // driver.get("http://the-internet.herokuapp.com/basic_auth");
-        // driver.switchTo().alert().authenticateUsing(new
-        // UserAndPassword("admin", "admin"));
     }
 }

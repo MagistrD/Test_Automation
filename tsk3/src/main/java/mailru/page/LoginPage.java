@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    private static final String MAIL_RU = "https://mail.ru";
     private static final By LOGIN_INBOX_LOCATOR = By.xpath("//input[@id='mailbox__login']");
     private static final By PASSWORD_INBOX_LOCATOR = By.xpath("//input[@id='mailbox__password']");
     private static final By LOGIN_SUBMIT_BUTTON = By.xpath("//input[@id='mailbox__auth__button']");
