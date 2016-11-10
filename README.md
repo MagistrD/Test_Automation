@@ -4,28 +4,28 @@
 
 ###Example for running:
 
-'''console
+```console
 java -jar TAT-jar-with-dependencies.jar
-'''
+```
 
 ### Parameters:
 
 Browser (FIREFOX or CHROME):
-'''console
+```console
 --browser
-'''
+```
 
 Selenium host (127.0.0.1):
-'''console
+```console
 --host
-'''
+```
 
 Selenium port(4444)
-'''console
+```console
 --port
-'''
+```
 
 Path to suite(test-suites/YandexDriveTestSuite.xml)
-'''console
+```console
 --suite
-'''
+```
