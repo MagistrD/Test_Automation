@@ -3,11 +3,11 @@ package aliexpress.page;
 import ui.Browser;
 
 public class ProductPage extends Browser {
-    private static String COLOR_LOCATOR = "//span[contains(text(),'%s')]";
-    private static String SEND_FROM_LOCATOR = "//span[contains(text(),'%s')]";
-    private static String ADD_TO_CART_LOCATOR = "//a[@class='add-cart-btn']";
-    private static String GO_TO_CART = "Перейти к корзине";
-    private static String GO_TO_CART_BUTTON_LOCATOR = "//a[@class='ui-button ui-button-normal ui-button-medium']";
+    private static final String COLOR_LOCATOR = "//span[contains(text(),'%s')]";
+    private static final String SEND_FROM_LOCATOR = "//span[contains(text(),'%s')]";
+    private static final String ADD_TO_CART_LOCATOR = "//a[@class='add-cart-btn']";
+    private static final String GO_TO_CART = "Перейти к корзине";
+    private static final String GO_TO_CART_BUTTON_LOCATOR = "//a[@class='ui-button ui-button-normal ui-button-medium']";
 
     public void selectColor(String color) {
         waitForElementVisible(String.format(COLOR_LOCATOR, color));

@@ -19,6 +19,4 @@ public class RandomUtil {
         }
         return stringBuilder.toString();
     }
-
-
 }

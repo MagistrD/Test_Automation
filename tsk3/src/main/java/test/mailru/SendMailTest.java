@@ -50,12 +50,12 @@ public class SendMailTest {
         Assert.assertTrue(homePage.sendMailWithoutSubjectAndBody(CORRECT_LOGIN, null, null), "Excepted true");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void sendMailWithoutAddressTest() {
         Assert.assertTrue(homePage.sendMailWithoutAddress(null, SUBJECT, MESSAGE), "Excepted true");
     }
 
-    @Test(priority = 4)
+    @Test(priority = 2)
     public void draftMailTest() {
         Assert.assertTrue(homePage.draftMail(CORRECT_LOGIN, SUBJECT, MESSAGE), "Expected true");
     }

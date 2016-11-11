@@ -21,12 +21,10 @@ public class HomePage {
     private static final By SEND_BUTTON_LOCATOR = By.xpath("//div[@data-name='send']");
     private static final By SAVE_DRAFT_LOCATOR = By.xpath("//div[@data-name='saveDraft']");
     private static final By ACCEPT_SEND_LOCATOR = By.xpath("//div[@class='is-compose-empty_in']//form//div//button//"
-            +
-            "span[contains(text(),'Продолжить')]");
+            + "span[contains(text(),'Продолжить')]");
     private static final By SAVE_STATUS_LOCATOR = By.xpath("//a[contains(text(),'черновиках')]");
     private static final By CHECKBOX_ALL_LOCATOR = By.xpath("//div[@class='js-checkbox b-checkbox b-checkbox_"
-            +
-            "transparent b-checkbox_false js-shortcut']//div");
+            + "transparent b-checkbox_false js-shortcut']//div");
     private static final By DELETE_BUTTON_LOCATOR = By.xpath("//div[@data-shortcut-title='Del']");
     private static final By LABEL_YOU_HAVE_NOT_DRAFTS_LOCATOR = By.xpath("//span[@class='b-datalist__empty__text']");
     private static final By CLEAR_TRASH_BUTTON_LOCATOR = By.xpath("//button[@data-name='clearFolder']");
@@ -146,7 +144,6 @@ public class HomePage {
         } else {
             return false;
         }
-
     }
 
     private void clickSaveButton() {

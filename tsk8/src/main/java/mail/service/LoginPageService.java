@@ -4,7 +4,7 @@ import mail.page.LoginPage;
 
 public class LoginPageService {
 
-    LoginPage loginPage = new LoginPage();
+    private LoginPage loginPage = new LoginPage();
 
     public void login(String login, String password) {
         loginPage.openLoginPage();
@@ -12,5 +12,4 @@ public class LoginPageService {
         loginPage.sendKeysToPassword(password);
         loginPage.clickSubmit();
     }
-
 }

@@ -19,15 +19,15 @@ import steps.mail.MailNewLetterSteps;
 import java.util.Arrays;
 import java.util.List;
 
-
 @RunWith(AnnotatedEmbedderRunner.class)
 @Configure(storyReporterBuilder = StoryReportBuilder.class)
 @UsingEmbedder(embedder = Embedder.class, generateViewAfterStories = true, metaFilters = "-skip")
-@UsingSteps(instances = {AliLoginSteps.class, AliNavigationSteps.class, AliBrandSearchSteps.class, AliProductSteps.class,
-        AliCartSteps.class, MailLoginSteps.class, MailNewLetterSteps.class, MailInboxSteps.class})
+@UsingSteps(instances = {AliLoginSteps.class, AliNavigationSteps.class, AliBrandSearchSteps.class,
+        AliProductSteps.class, AliCartSteps.class, MailLoginSteps.class, MailNewLetterSteps.class,
+        MailInboxSteps.class})
 
 public class StoriesRunner implements Embeddable {
-        private Embedder embedder;
+    private Embedder embedder;
 
     public void useEmbedder(Embedder embedder) {
         this.embedder = embedder;

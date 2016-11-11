@@ -3,7 +3,7 @@ package aliexpress.service;
 import aliexpress.page.ProductPage;
 
 public class ProductPageService {
-    private static String PRODUCT_NAME = "Lenovo LEMON K3";
+    private static final String PRODUCT_NAME = "Lenovo LEMON K3";
 
     private ProductPage productPage = new ProductPage();
 

@@ -13,7 +13,9 @@ public class BasePage {
 
     public void setUpDriver() {
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(TimeOutsEnum.IMPLICIT_WAIT.getValue(), TimeOutsEnum.IMPLICIT_WAIT.getTimeUnit());
-        driver.manage().timeouts().pageLoadTimeout(TimeOutsEnum.PAGE_LOAD.getValue(), TimeOutsEnum.PAGE_LOAD.getTimeUnit());
+        driver.manage().timeouts().implicitlyWait(TimeOutsEnum.IMPLICIT_WAIT.getValue(),
+                TimeOutsEnum.IMPLICIT_WAIT.getTimeUnit());
+        driver.manage().timeouts().pageLoadTimeout(TimeOutsEnum.PAGE_LOAD.getValue(),
+                TimeOutsEnum.PAGE_LOAD.getTimeUnit());
     }
 }

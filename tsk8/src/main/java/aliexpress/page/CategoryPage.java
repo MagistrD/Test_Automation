@@ -3,8 +3,8 @@ package aliexpress.page;
 import ui.Browser;
 
 public class CategoryPage extends Browser {
-    private static String CATEGORY_LOCATOR = "//*[contains(text(), 'Компьютеры и сетевое оборудование')]";
-    private static String ITEM_LOCATOR = "//*[contains(text(), 'Ноутбуки')]";
+    private static final String CATEGORY_LOCATOR = "//*[contains(text(), 'Компьютеры и сетевое оборудование')]";
+    private static final String ITEM_LOCATOR = "//*[contains(text(), 'Ноутбуки')]";
 
     public String getTitle() {
         return getPageTitle();

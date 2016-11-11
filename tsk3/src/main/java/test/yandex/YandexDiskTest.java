@@ -95,11 +95,6 @@ public class YandexDiskTest {
 
     @AfterMethod
     public void quitBrowser() throws IOException {
-        //trashService.clearTrash();
         yaDiskService.closeBrowser();
-//        File filesFolder = new File(FILES_FOLDER);
-//        clean.cleanDirectory(filesFolder);
-//        File downloadsFolder = new File(DriverFactory.DOWNLOADS_PATH);
-//        clean.cleanDirectory(downloadsFolder);
     }
 }

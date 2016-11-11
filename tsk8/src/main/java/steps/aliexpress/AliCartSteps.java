@@ -39,5 +39,4 @@ public class AliCartSteps {
         cartPageService.closeBrowser();
     }
 
-
 }

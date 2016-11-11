@@ -19,7 +19,8 @@ public class HomePage {
     private static final By ADDRESS_LOCATOR = By.xpath("//textarea[@data-original-name='To']");
     private static final By SUBJECT_LOCATOR = By.xpath("//input[@name='Subject']");
     private static final By SEND_BUTTON_LOCATOR = By.xpath("//div[@data-name='send']");
-    private static final By UNREAD_POINT_LOCATOR = By.xpath("//*[contains(@class,'b-letterstatus b-letterstatus_unread')]");
+    private static final By UNREAD_POINT_LOCATOR = By.xpath("//*[contains(@class,'b-letterstatus "
+            + "b-letterstatus_unread')]");
 
     private static final By SAVE_DRAFT_LOCATOR = By.xpath("//div[@data-name='saveDraft']");
     private WebDriver driver;

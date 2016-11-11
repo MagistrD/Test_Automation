@@ -43,7 +43,6 @@ public class WebDriverApiOverviewTest {
     @Test
     public void driverNavigation() {
         driver.get(YA_RU);
-
         driver.navigate().to(GOOGLE_RU);
         driver.navigate().back();
         driver.navigate().forward();
@@ -133,7 +132,6 @@ public class WebDriverApiOverviewTest {
         driver.get(YA_RU);
         WebElement searchBar = driver.findElement(SEARCH_BAR_LOCATOR);
         searchBar.sendKeys("Hello");
-
         System.out.println("Tag: " + searchBar.getTagName());
         System.out.println("Attribute 'name': " + searchBar.getAttribute("name"));
         System.out.println("Color: " + searchBar.getCssValue("color"));
@@ -141,7 +139,6 @@ public class WebDriverApiOverviewTest {
         System.out.println("Location: " + searchBar.getLocation());
         System.out.println("Text: " + searchBar.getText());
         System.out.println("Value: " + searchBar.getAttribute("value"));
-
         System.out.println("Displayed: " + searchBar.isDisplayed());
         System.out.println("Enabled: " + searchBar.isEnabled());
         System.out.println("Selected: " + searchBar.isSelected());
@@ -150,19 +147,14 @@ public class WebDriverApiOverviewTest {
     @Test
     public void driverSelects() {
         driver.get("http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select");
-
         driver.switchTo().frame("iframeResult");
-
         Select select = new Select(driver.findElement(By.tagName("select")));
-
         select.selectByIndex(1);
         select.selectByValue("audi");
         select.selectByVisibleText("Saab");
-
         select.getOptions();
         select.getFirstSelectedOption();
         select.getAllSelectedOptions();
-
         select.deselectAll();
         select.deselectByIndex(1);
         select.deselectByValue("Test");
@@ -173,7 +165,6 @@ public class WebDriverApiOverviewTest {
     public void driverAdvancedActions() {
         driver.get(YA_RU);
         WebElement searchBar = driver.findElement(SEARCH_BAR_LOCATOR);
-
         Actions actions = new Actions(driver).click(searchBar).keyDown(Keys.LEFT_SHIFT).sendKeys("hello");
         actions.build().perform();
         searchBar.submit();

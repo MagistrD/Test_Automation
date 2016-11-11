@@ -8,8 +8,8 @@ import org.jbehave.core.annotations.When;
 import org.junit.Assert;
 
 public class MailLoginSteps {
-    LoginPageService loginPageService = new LoginPageService();
-    InboxPageService inboxPageService = new InboxPageService();
+    private LoginPageService loginPageService = new LoginPageService();
+    private InboxPageService inboxPageService = new InboxPageService();
 
     @When("I type <login> and <password>")
     public void login(@Named("login") String login, @Named("password") String password) {
@@ -18,7 +18,6 @@ public class MailLoginSteps {
 
     @Then("I see inbox page")
     public void checkInboxPage() {
-        Assert.assertTrue("Incorrect login",inboxPageService.isCorrectPage());
+        Assert.assertTrue("Incorrect login", inboxPageService.isCorrectPage());
     }
-
 }

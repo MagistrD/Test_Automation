@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 public class AliProductSteps {
 
-    ProductPageService productPageService = new ProductPageService();
+    private ProductPageService productPageService = new ProductPageService();
 
     @When("I select <color> and <from> and send to Cart")
     public void addProductToCart(@Named("color") String color, @Named("from") String from) {

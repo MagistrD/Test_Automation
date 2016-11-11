@@ -3,7 +3,7 @@ package aliexpress.service;
 import aliexpress.page.ItemPage;
 
 public class ItemPageService {
-    private static String BRAND_NAME = "Lenovo";
+    private static final String BRAND_NAME = "Lenovo";
 
     private ItemPage itemPage = new ItemPage();
 
@@ -20,6 +20,4 @@ public class ItemPageService {
         String title = itemPage.getTitle();
         return title.contains(BRAND_NAME);
     }
-
-
 }

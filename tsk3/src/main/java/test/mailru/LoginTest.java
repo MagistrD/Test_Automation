@@ -14,7 +14,6 @@ import mailru.page.ErrorLoginPage;
 import mailru.page.LoginPage;
 import runner.driver.TimeOutsEnum;
 
-
 public class LoginTest {
 
     private static final String CORRECT_LOGIN = "magistr-dante@mail.ru";
@@ -30,8 +29,10 @@ public class LoginTest {
     @BeforeMethod
     private void setUpDriver() {
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(TimeOutsEnum.IMPLICIT_WAIT.getValue(), TimeOutsEnum.IMPLICIT_WAIT.getTimeUnit());
-        driver.manage().timeouts().pageLoadTimeout(TimeOutsEnum.PAGE_LOAD.getValue(), TimeOutsEnum.PAGE_LOAD.getTimeUnit());
+        driver.manage().timeouts().implicitlyWait(TimeOutsEnum.IMPLICIT_WAIT.getValue(),
+                TimeOutsEnum.IMPLICIT_WAIT.getTimeUnit());
+        driver.manage().timeouts().pageLoadTimeout(TimeOutsEnum.PAGE_LOAD.getValue(),
+                TimeOutsEnum.PAGE_LOAD.getTimeUnit());
     }
 
     @Test
@@ -39,7 +40,8 @@ public class LoginTest {
         driver.get(MAIL_RU);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(CORRECT_LOGIN, CORRECT_PASSWORD);
-        WebElement userLogin = new WebDriverWait(driver, WAIT_TIME).until(ExpectedConditions.visibilityOfElementLocated(AUTHORISATION_USER_EMAIL_LOCATOR));
+        WebElement userLogin = new WebDriverWait(driver, WAIT_TIME).
+                until(ExpectedConditions.visibilityOfElementLocated(AUTHORISATION_USER_EMAIL_LOCATOR));
         Assert.assertEquals(userLogin.getText(), CORRECT_LOGIN);
     }
 

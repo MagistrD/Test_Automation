@@ -14,7 +14,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Browser implements WrapsDriver {
-    public static final int ELEMENT_WAIT_TIMEOUT_SECONDS = 60;
+    private static final int ELEMENT_WAIT_TIMEOUT_SECONDS = 60;
     private static String STRING_LOCATOR = "//*[contains(text(), '%s')]";
     private static WebDriver instance;
     private static WebDriver driver;
@@ -85,7 +85,6 @@ public class Browser implements WrapsDriver {
         element.sendKeys(value);
     }
 
-
     public void sendFile(String locator, String path) {
         WebElement element = findElement(locator);
         element.sendKeys(new File(path).getAbsolutePath());
@@ -114,7 +113,6 @@ public class Browser implements WrapsDriver {
 
     public static void open(String url) {
         driver.get(url);
-
     }
 
     public void waitForElementIsPresent(String locator) {
@@ -141,13 +139,6 @@ public class Browser implements WrapsDriver {
         } catch (IOException e) {
             throw new CommonTestRuntimeException("Failed to write screenshot: ", e);
         }
-    }
-
-    public void moveToElement(String locator) {
-        new Actions(getWrappedDriver())
-                .moveToElement(findElement(locator))
-                .build()
-                .perform();
     }
 
     public String getPageTitle() {

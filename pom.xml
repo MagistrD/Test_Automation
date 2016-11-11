@@ -25,14 +25,7 @@
     <build>
         <finalName>TAT</finalName>
         <sourceDirectory>tsk3/src/main/java</sourceDirectory>
-        <!--<resources>-->
-            <!--<resource>-->
-                <!--<directory>tsk3/src/main/resources</directory>-->
-            <!--</resource>-->
-        <!--</resources>-->
-
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -103,7 +96,6 @@
     </build>
 
     <dependencies>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -122,8 +114,6 @@
             <artifactId>testng</artifactId>
             <version>6.8.21</version>
         </dependency>
-
-
 
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -175,6 +165,5 @@
             <artifactId>jbehave-web-selenium</artifactId>
             <version>3.5.5</version>
         </dependency>
-
     </dependencies>
 </project>

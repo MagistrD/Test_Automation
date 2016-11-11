@@ -4,10 +4,10 @@ import ui.Browser;
 
 public class LoginPage extends Browser {
 
-    private static String MAIL_URL = "https://mail.ru";
-    private static String LOGIN_LOCATOR = "//input[@name='Login']";
-    private static String PASSWORD_LOCATOR = "//input[@type='password']";
-    private static String SUBMIT_BUTTON_LOCATOR = "//*[@type='submit']";
+    private static final String MAIL_URL = "https://mail.ru";
+    private static final String LOGIN_LOCATOR = "//input[@name='Login']";
+    private static final String PASSWORD_LOCATOR = "//input[@type='password']";
+    private static final String SUBMIT_BUTTON_LOCATOR = "//*[@type='submit']";
 
     public LoginPage openLoginPage() {
         open(MAIL_URL);

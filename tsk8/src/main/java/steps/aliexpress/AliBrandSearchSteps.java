@@ -9,8 +9,8 @@ import org.jbehave.core.annotations.When;
 import org.junit.Assert;
 
 public class AliBrandSearchSteps {
-    ItemPageService itemPageService = new ItemPageService();
-    ProductPageService productPageService = new ProductPageService();
+    private ItemPageService itemPageService = new ItemPageService();
+    private ProductPageService productPageService = new ProductPageService();
 
     @When("I type brand to search")
     public void typeBrand() {
@@ -24,7 +24,6 @@ public class AliBrandSearchSteps {
         Assert.assertTrue("Incorrect Brand search", itemPageService.isCorrectBrandPage());
     }
 
-
     @When("I select product")
     public void selectProduct() {
         itemPageService.selectProduct();
@@ -36,6 +35,4 @@ public class AliBrandSearchSteps {
     public void checkCorrectProductPage() {
         Assert.assertTrue("Incorrect product", productPageService.isCorrectProductPage());
     }
-
-
 }

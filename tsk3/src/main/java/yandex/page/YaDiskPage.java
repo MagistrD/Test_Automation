@@ -11,7 +11,6 @@ import java.io.IOException;
 public class YaDiskPage extends Browser {
 
     private static final String SEND_FILE_BUTTON_LOCATOR = "//input[@type='file']";
-    //private static final String PATH = "./tsk3/src/main/resources/files/";
     private static final String CLOSE_UPLOAD_DIALOG_BUTTON_LOCATOR = "//button[@class=' nb-button _nb-small-button "
             + "b-dialog-upload__button-close ns-action js-hide']";
     private static final String DOWNLOAD_FILE_BUTTON_LOCATOR = "//button[@title='Скачать']";
@@ -29,14 +28,13 @@ public class YaDiskPage extends Browser {
         waitForElementIsPresent(uploadFileLocator);
         click(uploadFileLocator);
         waitForElementIsPresent(DOWNLOAD_FILE_BUTTON_LOCATOR);
-        File file = new File(/*DriverFactory.DOWNLOADS_PATH + */  "download/" + s);
-        File directory = new File(/*DriverFactory.DOWNLOADS_PATH*/ "download");
+        File file = new File("download/" + s);
+        File directory = new File("download");
         directory.mkdir();
         click(DOWNLOAD_FILE_BUTTON_LOCATOR);
         while (!FileUtils.directoryContains(directory, file)) {
             Thread.sleep(1000);
         }
-
     }
 
     public void moveToTrash(String s) {

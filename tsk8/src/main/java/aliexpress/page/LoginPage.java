@@ -1,17 +1,15 @@
 package aliexpress.page;
 
-
 import ui.Browser;
 
 public class LoginPage extends Browser {
-    private static String ALIEXPRESS_LOGIN_URL = "https://login.aliexpress.com/buyer_ru.htm";
-    private static String LOGIN_LOCATOR = "//input[@name='loginId']";
-    private static String PASSWORD_LOCATOR = "//input[@type='password']";
-    private static String SUBMIT_BUTTON_LOCATOR = "//*[@type='submit']";
-    private static String LOGIN_FRAME_LOCATOR = "//iframe[contains(@id, 'alibaba-login-box')]";
-    private static String LOGIN = "vlad.litoshik@yandex.ru";
-    private static String PASSWORD = "aliexpress";
-
+    private static final String ALIEXPRESS_LOGIN_URL = "https://login.aliexpress.com/buyer_ru.htm";
+    private static final String LOGIN_LOCATOR = "//input[@name='loginId']";
+    private static final String PASSWORD_LOCATOR = "//input[@type='password']";
+    private static final String SUBMIT_BUTTON_LOCATOR = "//*[@type='submit']";
+    private static final String LOGIN_FRAME_LOCATOR = "//iframe[contains(@id, 'alibaba-login-box')]";
+    private static final String LOGIN = "vlad.litoshik@yandex.ru";
+    private static final String PASSWORD = "aliexpress";
 
     public LoginPage openLoginPage() {
         open(ALIEXPRESS_LOGIN_URL);
@@ -33,5 +31,4 @@ public class LoginPage extends Browser {
         click(SUBMIT_BUTTON_LOCATOR);
         switchToDefault();
     }
-
 }

@@ -5,7 +5,7 @@ import mail.page.NewMailPage;
 
 public class NewMailPageService {
 
-    private static String NEW_MAIL = "Новое письмо";
+    private static final String NEW_MAIL = "Новое письмо";
     private NewMailPage newMailPage = new NewMailPage();
     private InboxPage inboxPage = new InboxPage();
 
