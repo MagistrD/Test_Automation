@@ -2,7 +2,7 @@
 
 ## Task 6
 
-###Example for running:
+###CI --help
 
 ```console
 java -jar TAT-jar-with-dependencies.jar
